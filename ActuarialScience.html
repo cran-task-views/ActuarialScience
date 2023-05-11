@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CRAN Task View: Actuarial science</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="citation_title" content="CRAN Task View: Actuarial science" />
+  <meta name="citation_author" content="Christophe Dutang, Vincent Goulet" />
+  <meta name="citation_publication_date" content="2023-05-11" />
+  <meta name="DC.title" content="CRAN Task View: Actuarial science" />
+  <meta name="DC.creator" content="Christophe Dutang, Vincent Goulet" />
+  <meta name="DC.issued" content="2023-05-11" />
+  <meta name="og:title" content="CRAN Task View: Actuarial science" />
+  <meta name="og:description" content="Classical references on actuarial mathematics are (in chronological order):" />
+  <meta name="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+</head>
+
+<body>
+  <h2>CRAN Task View: Actuarial science</h2>
+  <table>
+    <tr><td style="vertical-align: top;"><b>Maintainer:</b></td><td>Christophe Dutang, Vincent Goulet</td></tr>
+    <tr><td style="vertical-align: top;"><b>Contact:</b></td><td>&#x64;&#x75;&#x74;&#x61;&#x6e;&#x67;&#x63;&#x20;&#x61;&#x74;&#x20;&#x67;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;</td></tr>
+    <tr><td style="vertical-align: top;"><b>Version:</b></td><td>2023-05-11</td></tr>
+    <tr><td style="vertical-align: top;"><b>Source:</b></td><td><a href="https://github.com/cran-task-views/ActuarialScience/">https://github.com/cran-task-views/ActuarialScience/</a></td></tr>
+    <tr><td style="vertical-align: top;"><b>Citation:</b></td><td>Christophe Dutang, Vincent Goulet (2023). CRAN Task View: Actuarial science. Version 2023-05-11.</td></tr>
+  </table>
+
+<p>Classical references on actuarial mathematics are (in chronological order):</p>
+<ul>
+<li>both life and non-life insurance:
+<ul>
+<li>Bowers, N. L., Gerber, H. U., Hickman, J. C., Jones, D. A. &amp; Nesbitt, C. J. (1997), Actuarial Mathematics, The Society of Actuaries.</li>
+<li>Teugels, J. &amp; Sundt, B. (2004), Encyclopedia of Actuarial Science, Vol. 1, John Wiley &amp; Sons <a href="doi:10.1002/9780470012505" class="uri">doi:10.1002/9780470012505</a>.</li>
+</ul></li>
+<li>non-life insurance:
+<ul>
+<li>Taylor, G. (2000), Loss Reserving : An Actuarial Perspective, Kluwer Academic Publishers, Boston <a href="doi:10.1007/978-1-4615-4583-5" class="uri">doi:10.1007/978-1-4615-4583-5</a>.</li>
+<li>Charpentier, A. &amp; Denuit, M. (2004), Mathématiques de l’assurance non vie, Vol. 1 &amp; 2, Economica.</li>
+<li>Buehlmann, H. &amp; Gisler, A. (2005), A Course in Credibility Theory and its Applications, Springer <a href="doi:10.1007/3-540-29273-X" class="uri">doi:10.1007/3-540-29273-X</a>.</li>
+<li>Wuethrich, M. &amp; Merz, M. (2008), Stochastic Claims Reserving Methods in Insurance, Wiley Finance <a href="doi:10.1002/9781119206262" class="uri">doi:10.1002/9781119206262</a>.</li>
+<li>Jong, P. D. &amp; Heller, G. (2008), Generalized Linear Models for Insurance Data, Cambridge University Press <a href="doi:10.1017/CBO9780511755408" class="uri">doi:10.1017/CBO9780511755408</a>.</li>
+<li>Frees, E. (2009), Regression Modeling with Actuarial and Financial Applications, International Series on Actuarial Science, Cambridge University Press <a href="doi:10.1017/CBO9780511814372" class="uri">doi:10.1017/CBO9780511814372</a>.</li>
+<li>Klugman, S., Panjer, H. &amp; Willmot, G. (2019), Loss Models : From Data to Decisions, 5th edn, Wiley.</li>
+</ul></li>
+<li>life insurance:
+<ul>
+<li>Hardy, M. (2003), Investment Guarantees : Modeling and Risk Management for Equity-Linked Life Insurance, Wiley.</li>
+<li>Moller, T. &amp; Steffensen, M. (2007), Market-Valuation Methods in Life and Pension Insurance, Cambridge University Press <a href="doi:10.1017/CBO9780511543289" class="uri">doi:10.1017/CBO9780511543289</a>.</li>
+<li>Dickson, D., Hardy, M. &amp; Waters, H. (2013), Actuarial Mathematics for Life Contingent Risks, 2nd edn, Cambridge University Press <a href="doi:10.1017/9781108784184" class="uri">doi:10.1017/9781108784184</a>.</li>
+<li>Macdonald, A., Richard, S. &amp; Currie, I. (2018), Modelling Mortality with Actuarial Applications, Cambridge University Press <a href="doi:10.1017/9781107051386" class="uri">doi:10.1017/9781107051386</a>.</li>
+</ul></li>
+</ul>
+<p>Books on actuarial mathematics in R are:</p>
+<ul>
+<li>Kaas, R., Goovaerts, M., Dhaene, J. &amp; Denuit, M. (2008), Modern Actuarial Risk Theory Using R, 2nd edn, Springer <a href="doi:10.1007/978-3-540-70998-5" class="uri">doi:10.1007/978-3-540-70998-5</a>.</li>
+<li>Charpentier, A., ed. (2014), Computational Actuarial Science with R, Chapman and Hall-CRC.</li>
+</ul>
+<p>The maintainers gratefully acknowledge Patrice Kiener for his numerous comments and suggestions.</p>
+<h3 id="table-of-contents">Table of contents</h3>
+<ul>
+<li><a href="#Life">Life Insurance</a>
+<ul>
+<li><a href="#LifeCont">Life contingencies</a></li>
+<li><a href="#Mortality">Prospective mortality models</a></li>
+<li><a href="#PtfExperience">Survival analysis and portfolio experience</a></li>
+<li><a href="#LReserving">Life and pension reserving</a></li>
+</ul></li>
+<li><a href="#NonLife">Non Life Insurance</a>
+<ul>
+<li><a href="#Loss">Loss modeling</a></li>
+<li><a href="#AprioriPricing">Insurance pricing</a></li>
+<li><a href="#AposteriorPricing">Experience pricing</a></li>
+<li><a href="#NLReserving">Claim reserving</a></li>
+<li><a href="#RiskRuin">Risk and ruin theory</a></li>
+<li><a href="#ClaimGen">Claim generators</a></li>
+</ul></li>
+<li><a href="#Reinsurance">Reinsurance and extreme events</a></li>
+<li><a href="#Misc">Misc</a>
+<ul>
+<li><a href="#Datahandling">Data handling</a></li>
+<li><a href="#Datasets">Actuarial datasets</a></li>
+</ul></li>
+</ul>
+<h1 id="life-insurance"><span id="Life">Life Insurance:</span></h1>
+<h2 id="life-contingencies"><span id="LifeCont">Life contingencies:</span></h2>
+<ul>
+<li><a href="https://CRAN.R-project.org/package=lifecontingencies">lifecontingencies</a> provides the most wanted functionalities for life actuarial mathematics, namely, survival/death probabilities, the present value of life annuities and (whole)-life insurance one, two or multiple heads. The package also propose S4 classes for handling lifetables, multiple decrement tables and actuarial table.</li>
+<li><a href="https://CRAN.R-project.org/package=AnnuityRIR">AnnuityRIR</a> proposes different techniques for the approximation of the present and final value of a unitary annuity-due or annuity-immediate considering interest rate as a random variable.</li>
+<li><a href="https://CRAN.R-project.org/package=LifeInsuranceContracts">LifeInsuranceContracts</a> provides R6 classes to model traditional life insurance contracts like annuities, whole life insurances or endowments with (discretionary) profit participation. This package provides a framework to model such contracts in a very generic (cash-flow-based) way and includes modelling profit participation schemes, dynamic increases or more general contract layers, as well as contract changes.</li>
+</ul>
+<h2 id="prospective-mortality-models"><span id="Mortality">Prospective mortality models:</span></h2>
+<ul>
+<li><a href="https://CRAN.R-project.org/package=demography">demography</a> provides functions for demographic analysis including lifetable calculations; Lee-Carter modelling; functional data analysis of mortality rates, fertility rates, net migration numbers; and stochastic population forecasting.</li>
+<li><a href="https://CRAN.R-project.org/package=HMDHFDplus">HMDHFDplus</a> allows to read Human Mortality Database and Human Fertility Database Data from the Web in conjunction with <a href="https://CRAN.R-project.org/package=demography">demography</a>.</li>
+<li><a href="https://CRAN.R-project.org/package=MortalitySmooth">MortalitySmooth</a> allowed mortality smoothing but is currently archived.</li>
+<li><a href="https://CRAN.R-project.org/package=StMoMo">StMoMo</a> implements of the family of generalised age-period-cohort stochastic mortality models. This family of models encompasses many models proposed in the actuarial and demographic literature including the Lee-Carter (1992) <a href="doi:10.2307/2290201" class="uri">doi:10.2307/2290201</a> and the Cairns-Blake-Dowd (2006) <a href="doi:10.1111/j.1539-6975.2006.00195.x" class="uri">doi:10.1111/j.1539-6975.2006.00195.x</a> models. It includes functions for fitting mortality models, analysing their goodness-of-fit and performing mortality projections and simulations.</li>
+<li><a href="https://CRAN.R-project.org/package=apc">apc</a> provides functions for age-period-cohort analysis. It can deal with</li>
+</ul>
+<ol type="i">
+<li>Aggregate data can be organised in matrices indexed by age-cohort, age-period or cohort-period. The data can include dose and response or just doses. A GLM allow a fit for 3,2,1 or 0 of the age-period-cohort factors.</li>
+<li>Individual-level data should have a row for each individual and columns for each of age, period, and cohort. A GLM allow to fit repeated cross-section model.</li>
+</ol>
+<ul>
+<li><a href="https://CRAN.R-project.org/package=MortalityTables">MortalityTables</a> provides classes to implement and plot cohort life tables for actuarial calculations. In particular, birth-year dependent mortality tables using a yearly trend to extrapolate from a base year are implemented, as well as period life table, cohort life tables using an age shift, and merged life tables.</li>
+<li><a href="https://CRAN.R-project.org/package=StanMoMo">StanMoMo</a> implements of popular mortality models using the ‘rstan’ package, which provides the R interface to the ‘Stan’ C++ library for Bayesian estimation.</li>
+</ul>
+<h2 id="survival-analysis-and-portfolio-experience"><span id="PtfExperience">Survival analysis and portfolio experience:</span></h2>
+<ul>
+<li>for a general overview of survival analysis, we refer to the <a href="https://cran.r-project.org/view=Survival">Survival Analysis view</a></li>
+<li><a href="https://CRAN.R-project.org/package=ELT">ELT</a> provides functions to build experience life tables for three methods: the standardized mortality ratio, a semi-parametric relational model, a GLM Poisson with interactions between age and calendar years.</li>
+</ul>
+<h2 id="life-and-pension-reserving"><span id="LReserving">Life and pension reserving:</span></h2>
+<ul>
+<li>computations can be carried out using <a href="https://CRAN.R-project.org/package=lifecontingencies">lifecontingencies</a>.</li>
+</ul>
+<h1 id="non-life-insurance"><span id="NonLife">Non-Life Insurance:</span></h1>
+<h2 id="loss-modeling"><span id="Loss">Loss modeling</span></h2>
+<ul>
+<li><p>for a detailed list of probability distributions, we refer to the <a href="https://cran.r-project.org/view=Distributions">Distributions view</a></p></li>
+<li><p>pioneer <a href="https://CRAN.R-project.org/package=actuar">actuar</a> package provides functions and data sets for actuarial science: modeling of loss distributions; simulation of compound models, discrete mixtures and compound hierarchical models. It support for many additional probability distributions to model insurance loss size and frequency: 23 continuous heavy tailed distributions (e.g. the Feller-Pareto family of distributions); the Poisson-inverse Gaussian discrete distribution; zero-truncated and zero-modified extensions of the standard discrete distributions as well as phase-type distributions.</p></li>
+<li><p><a href="https://CRAN.R-project.org/package=fitdistrplus">fitdistrplus</a> provides a user-friendly function to fit discrete/continuous probability distributions based on maximum likelihood estimation, quantile matching estimation, moment matching estimation,… Starting values for numerical algorithms for loss distributions of <a href="https://CRAN.R-project.org/package=actuar">actuar</a> are provided in this package.</p></li>
+<li><p><a href="https://CRAN.R-project.org/package=mbbefd">mbbefd</a> provides distributions that are typically used for exposure rating in general insurance, in particular to price reinsurance contracts.</p></li>
+<li><p><a href="https://CRAN.R-project.org/package=OpVaR">OpVaR</a> provides functions for computing the value-at-risk in compound Poisson models. The implementation comprises functions for modeling loss frequencies and loss severities with plain, mixed or spliced distributions using Maximum Likelihood estimation and Bayesian approaches.</p></li>
+<li><p><a href="https://CRAN.R-project.org/package=NetSimR">NetSimR</a> provides capped mean, exposure curves and increased limit factor curves (ILFs) for LogNormal, Gamma, Pareto, Sliced LogNormal-Pareto and Sliced Gamma-Pareto distributions.</p></li>
+</ul>
+<h2 id="a-priori-insurance-pricing"><span id="AprioriPricing">A priori Insurance pricing</span></h2>
+<ul>
+<li>(a priori) insurance pricing consists in fitting two models: one for claim frequency and one for claim severity. Classical models use GLM which are available in base R function <code>glm</code>. An alternative approch is to model directly the aggregate claim amount typically with a Tweedie model, see <a href="https://CRAN.R-project.org/package=tweedie">tweedie</a>.</li>
+<li>more advanced statistical models can be found in the <a href="https://cran.r-project.org/view=Econometrics">Econometrics view</a>, <a href="https://cran.r-project.org/view=MachineLearning">Machine learning view</a>.</li>
+<li><a href="https://CRAN.R-project.org/package=insurancerating">insurancerating</a> helps actuaries to implement GLMs within all relevant steps needed to construct a risk premium from raw data. It provides a data driven strategy for the construction of insurance tariff classes.</li>
+</ul>
+<h2 id="a-posteriori-experience-pricing"><span id="AposteriorPricing">A posteriori Experience pricing</span></h2>
+<ul>
+<li><a href="https://CRAN.R-project.org/package=actuar">actuar</a> provides functions for credibility theory: the <code>cm()</code> is the unified front end for credibility models fitting and supports hierarchical models with any number of levels (with Buehlmann and Buehlmann-Straub models as special cases) and the regression model of Hachemeister. <code>cm</code> can also fit linear Bayes models, in which case usage is much simplified.</li>
+<li><a href="https://CRAN.R-project.org/package=actuaRE">actuaRE</a> allows to fit a random effects model using either the hierarchical credibility model, a combination of the hierarchical credibility model with a generalized linear model or a Tweedie generalized linear mixed model.</li>
+<li><a href="https://CRAN.R-project.org/package=nlirms">nlirms</a> provided a rate-making system based on a bonus-malus system introduced by Lemaire (1995) but is archived.</li>
+</ul>
+<h2 id="claim-reserving"><span id="NLReserving">Claim reserving</span></h2>
+<ul>
+<li><a href="https://CRAN.R-project.org/package=ChainLadder">ChainLadder</a> provides various statistical methods and models which are typically used for the estimation of outstanding claims reserves in general (i.e. non-life) insurance, including those to estimate the claims development result as required under Solvency II.</li>
+<li><a href="https://CRAN.R-project.org/package=clmplus">clmplus</a> implements the chain ladder model under the reverse time framework introduced in Hiabu (2017) <a href="doi:10.1080/03461238.2016.1240709" class="uri">doi:10.1080/03461238.2016.1240709</a> and extensions that add flexibility to the individual development factors modeling by allowing practitioners to set their own hazard rate model.</li>
+<li><a href="https://CRAN.R-project.org/package=NetSimR">NetSimR</a> Provides functions that help model excess levels, capping and pure Incurred but not reported claims (pure IBNR) and includes calculating pure IBNR exposure with LogNormal and Gamma distribution for reporting delay.</li>
+</ul>
+<h2 id="risk-and-ruin-theory"><span id="RiskRuin">Risk and ruin theory</span></h2>
+<ul>
+<li><a href="https://CRAN.R-project.org/package=actuar">actuar</a> provides infinite time ruin probability of Cramér-Lundberg and Sparre Andersen models, using phase-type distributions including mixtures of exponentials, Erlang and mixture of Erlang for both claim amount distribution and claim interarrival times.</li>
+<li><a href="https://CRAN.R-project.org/package=ruin">ruin</a> implements a collection of common models of risk processes in actuarial science, represented as formal S4 classes. Each class (risk model) has a simulator of its path, and a plotting function. Further, a Monte-Carlo estimator of a ruin probability for a finite time is implemented, using a parallel computation. Currently, the package extends two classical risk models Cramer-Lundberg and Sparre Andersen models by including capital injections, that are positive jumps.</li>
+</ul>
+<h2 id="claim-generators"><span id="ClaimGen">Claim generators</span></h2>
+<ul>
+<li><a href="https://CRAN.R-project.org/package=SynthETIC">SynthETIC</a> creates an individual claims simulator which generates various features of non-life insurance claims. An initial set of test parameters, designed to mirror the experience of an Auto Liability portfolio, were set up and applied by default to generate a realistic test data set of individual claims (see vignette). The simulated data set then allows practitioners to back-test the validity of various reserving models and to prove and/or disprove certain actuarial assumptions made in claims modelling. The distributional assumptions used to generate this data set can be easily modified by users to match their experiences.</li>
+<li><a href="https://CRAN.R-project.org/package=SPLICE">SPLICE</a> is an extension of <a href="https://CRAN.R-project.org/package=SynthETIC">SynthETIC</a> , to simulate the evolution of case estimates of incurred losses through the lifetime of an insurance claim. The transactional simulation output now comprises key dates, and both claim payments and revisions of estimated incurred losses. An initial set of test parameters, designed to mirror the experience of a real insurance portfolio, were set up and applied by default to generate a realistic test data set of incurred histories.</li>
+</ul>
+<h1 id="reinsurance"><span id="Reinsurance">Reinsurance</span></h1>
+<ul>
+<li>for a comprehensive review of extreme value analysis, we refer to the <a href="https://cran.r-project.org/view=ExtremeValue">Extreme value view</a></li>
+<li><a href="https://CRAN.R-project.org/package=ReIns">ReIns</a> follows the book “Reinsurance: Actuarial and Statistical Aspects” and provides basic extreme value theory (EVT) estimators and graphical methods, EVT estimators and graphical methods adapted for censored and/or truncated data, Splicing of mixed Erlang distributions with EVT distributions, Value-at-Risk (VaR), Conditional Tail Expectation (CTE) and excess-loss premium estimates.</li>
+<li><a href="https://CRAN.R-project.org/package=ExtremeRisks">ExtremeRisks</a> provides a set of procedures for estimating risks related to extreme events via risk measures such as Expectile, Value-at-Risk,…</li>
+</ul>
+<h1 id="misc"><span id="Misc">Misc</span></h1>
+<h2 id="data-handling"><span id="Datahandling">Data handling</span></h2>
+<ul>
+<li><a href="https://CRAN.R-project.org/package=actuaryr">actuaryr</a> contains functions to easily refer to the first or last (working) day within a specific period relative to a base date to facilitate actuarial reporting and to compare results.</li>
+<li><a href="https://CRAN.R-project.org/package=eiopaR">eiopaR</a> provides EIOPA (European Insurance And Occupational Pensions Authority) risk-free rates.</li>
+<li><a href="https://CRAN.R-project.org/package=actxps">actxps</a> helps to prepare data, summarize results, and create reports via a dedicated S3 class “Actuarial Experience Studies”.</li>
+</ul>
+<h2 id="actuarial-datasets"><span id="Datasets">Actuarial datasets</span></h2>
+<ul>
+<li><a href="https://CRAN.R-project.org/package=CASdatasets">CASdatasets</a> provides a large variety of actuarial datasets, originally for the book ‘Computational Actuarial Science with R’. Note that the package is not hosted on CRAN but at <a href="http://dutangc.perso.math.cnrs.fr/RRepository/">CNRS</a> and <a href="http://cas.uqam.ca/">UQAM</a>.</li>
+<li><a href="https://CRAN.R-project.org/package=raw">raw</a> organizes several sets of publicly available data of interest to non-life actuaries.</li>
+<li><a href="https://CRAN.R-project.org/package=insuranceData">insuranceData</a> provides insurance datasets, which are often used in claims severity and claims frequency modelling. It helps testing new regression models in those problems, such as GLM, GLMM, HGLM, non-linear mixed models.</li>
+<li><a href="https://CRAN.R-project.org/package=actuar">actuar</a> provides functions to facilitate the generation of random variates from various probability models commonly used in actuarial applications: discrete mixtures; compound models where both the frequency and the severity components can have a hierarchical structure.</li>
+<li><a href="https://CRAN.R-project.org/package=Distributacalcul">Distributacalcul</a> calculated expected values, variance, different moments (kth moment, truncated mean), stop-loss, mean excess loss, Value-at-Risk (VaR) and Tail Value-at-Risk (TVaR) but is archived.</li>
+<li>An Individual Claims Generator for Claims Reserving Studies is provided by Wang &amp; Wuethrich at <a href="https://github.com/JSchelldorfer/IndividualClaimsSimulator/">IndividualClaimsSimulator</a>.</li>
+<li>An Individual Claims History Simulation machine for annual cashflows is provided by Gabrielli &amp; Wuethrich at <a href="https://people.math.ethz.ch/~wueth/simulation.html">IndividualClaimsHistory</a>.</li>
+</ul>
+
+  <h3>CRAN packages</h3>
+  <table>
+    <tr style="vertical-align: top;"><td><i>Core:</i></td><td><a href="https://CRAN.R-project.org/package=actuar">actuar</a>, <a href="https://CRAN.R-project.org/package=CASdatasets">CASdatasets</a>, <a href="https://CRAN.R-project.org/package=ChainLadder">ChainLadder</a>, <a href="https://CRAN.R-project.org/package=lifecontingencies">lifecontingencies</a>, <a href="https://CRAN.R-project.org/package=mbbefd">mbbefd</a>, <a href="https://CRAN.R-project.org/package=ReIns">ReIns</a>.</td></tr>
+    <tr style="vertical-align: top;"><td><i>Regular:</i></td><td><a href="https://CRAN.R-project.org/package=actuaRE">actuaRE</a>, <a href="https://CRAN.R-project.org/package=actuaryr">actuaryr</a>, <a href="https://CRAN.R-project.org/package=actxps">actxps</a>, <a href="https://CRAN.R-project.org/package=AnnuityRIR">AnnuityRIR</a>, <a href="https://CRAN.R-project.org/package=apc">apc</a>, <a href="https://CRAN.R-project.org/package=clmplus">clmplus</a>, <a href="https://CRAN.R-project.org/package=demography">demography</a>, <a href="https://CRAN.R-project.org/package=Distributacalcul">Distributacalcul</a>, <a href="https://CRAN.R-project.org/package=eiopaR">eiopaR</a>, <a href="https://CRAN.R-project.org/package=ELT">ELT</a>, <a href="https://CRAN.R-project.org/package=ExtremeRisks">ExtremeRisks</a>, <a href="https://CRAN.R-project.org/package=fitdistrplus">fitdistrplus</a>, <a href="https://CRAN.R-project.org/package=HMDHFDplus">HMDHFDplus</a>, <a href="https://CRAN.R-project.org/package=insuranceData">insuranceData</a>, <a href="https://CRAN.R-project.org/package=insurancerating">insurancerating</a>, <a href="https://CRAN.R-project.org/package=LifeInsuranceContracts">LifeInsuranceContracts</a>, <a href="https://CRAN.R-project.org/package=MortalitySmooth">MortalitySmooth</a>, <a href="https://CRAN.R-project.org/package=MortalityTables">MortalityTables</a>, <a href="https://CRAN.R-project.org/package=NetSimR">NetSimR</a>, <a href="https://CRAN.R-project.org/package=nlirms">nlirms</a>, <a href="https://CRAN.R-project.org/package=OpVaR">OpVaR</a>, <a href="https://CRAN.R-project.org/package=raw">raw</a>, <a href="https://CRAN.R-project.org/package=ruin">ruin</a>, <a href="https://CRAN.R-project.org/package=SPLICE">SPLICE</a>, <a href="https://CRAN.R-project.org/package=StanMoMo">StanMoMo</a>, <a href="https://CRAN.R-project.org/package=StMoMo">StMoMo</a>, <a href="https://CRAN.R-project.org/package=SynthETIC">SynthETIC</a>, <a href="https://CRAN.R-project.org/package=tweedie">tweedie</a>.</td></tr>
+  </table>
+
+
+</body>
+</html>
