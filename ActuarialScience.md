@@ -133,6 +133,11 @@ lifespan or at specific ages, as well as for overall mortality or for specific c
 ## [Life and pension reserving:]{#LReserving}
 
 - computations can be carried out using `r pkg("lifecontingencies", priority = "core")`. 
+- `r pkg("SimBEL")` allows to carry out Monte-Carlo simulation of asset-liability cashflows
+for unit-linked insurance and retirement plans in France.
+- `r pkg("ESGtoolkit")` provides functions for Economic Scenario Generator models 
+but is now archived. 
+ 
 
 # [Non-Life Insurance:]{#NonLife}
 
@@ -275,6 +280,8 @@ and Tail Value-at-Risk (TVaR) but is archived.
 at [IndividualClaimsSimulator](https://github.com/JSchelldorfer/IndividualClaimsSimulator/).
 - An Individual Claims History Simulation machine for annual cashflows is provided by Gabrielli & Wuethrich
 at [IndividualClaimsHistory](https://people.math.ethz.ch/~wueth/simulation.html).
+- [Cellar](https://cellar.kasa.ai/) is a collection of community-curated open datasets for insurance analytics. 
+
 
 
 
