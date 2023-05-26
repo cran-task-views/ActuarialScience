@@ -109,7 +109,9 @@ or abridged life tables given various input indices.
 - `r pkg("MortalityEstimate")` contains methods for estimating age-specific 
 death rates and life tables based on demographic indicators other than 
 death counts and population exposure to risk using linear or log-quadratic models. 
-
+- `r pkg("MortalityGaps")` provides methods for forecasting male/female life expectancy 
+based on analysis of the gap between male/female life expectancy in a country compared 
+with the record level of female life expectancy in the world. 
 
 ## [Survival analysis and portfolio experience:]{#PtfExperience}
 
