@@ -105,6 +105,9 @@ which provides the R interface to the 'Stan' C++ library for Bayesian estimation
 mortality models as well as methods blending. 
 - `r pkg("MortalityLaws")` provides 27 parametric mortality distributions and construct full
 or abridged life tables given various input indices. 
+- `r pkg("MortalityEstimate")` contains methods for estimating age-specific 
+death rates and life tables based on demographic indicators other than 
+death counts and population exposure to risk using linear or log-quadratic models. 
 
 
 ## [Survival analysis and portfolio experience:]{#PtfExperience}
