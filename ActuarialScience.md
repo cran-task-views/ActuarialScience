@@ -44,7 +44,7 @@ The maintainers gratefully acknowledge Patrice Kiener, Quentin Guibert for their
 ### Table of contents
 - [Life Insurance](#Life) 
   - [Life contingencies](#LifeCont)
-  - [Prospective mortality models](#Mortality)
+  - [Mortality laws and prospective mortality models](#Mortality)
   - [Survival analysis and portfolio experience](#PtfExperience)
   - [Life and pension reserving](#LReserving)
 - [Non Life Insurance](#NonLife) 
@@ -78,7 +78,7 @@ in a very generic (cash-flow-based) way and includes modelling profit participat
 schemes, dynamic increases or more general contract layers, as well as contract changes.
 - `r pkg("MortCast")` provides a function `life.table` to compute survival/death probabilities. 
 
-## [Prospective mortality models:]{#Mortality}
+## [Mortality laws and prospective mortality models:]{#Mortality}
 
 - `r pkg("demography")` provides functions for demographic analysis including lifetable calculations;
 Lee-Carter modelling; functional data analysis of mortality rates, fertility rates, net migration
@@ -103,6 +103,8 @@ cohort life tables using an age shift, and merged life tables.
 which provides the R interface to the 'Stan' C++ library for Bayesian estimation. 
 - `r pkg("MortCast")` provides estimation and projection methods for Kannisto and Lee-Carter 
 mortality models as well as methods blending. 
+- `r pkg("MortalityLaws")` provides 27 parametric mortality distributions and construct full
+or abridged life tables given various input indices. 
 
 
 ## [Survival analysis and portfolio experience:]{#PtfExperience}
@@ -230,6 +232,10 @@ and to compare results.
 risk-free rates.
 - `r pkg("actxps")` helps to prepare data, summarize results, and create reports 
 via a dedicated S3 class "Actuarial Experience Studies".
+- `r pkg("MortalityLaws")` provides functions to read from the Human Mortality Database (HMD),
+the Australian Human Mortality Database (AHMD), the Canadian Human Mortality Database (CHMD),
+the Japanese Mortality Database (JMD).
+
 
 
 ## [Actuarial datasets]{#Datasets}
