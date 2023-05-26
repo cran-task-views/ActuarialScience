@@ -52,14 +52,18 @@ The maintainers gratefully acknowledge Patrice Kiener, Quentin Guibert for their
   - [Insurance pricing](#AprioriPricing)
   - [Experience pricing](#AposteriorPricing)
   - [Claim reserving](#NLReserving)
-  - [Risk and ruin theory](#RiskRuin)
+  - [Ruin theory](#Ruin)
   - [Claim generators](#ClaimGen)
 - [Reinsurance and extreme events](#Reinsurance)
+- [Risk measures](#RiskMeasure)
 - [Misc](#Misc)
   - [Data handling](#Datahandling)
   - [Mortality databases](#MortData)
   - [Actuarial datasets](#Datasets)
   - [Documentation, on-line courses](#Learn)
+
+
+
 
 # [Life Insurance]{#Life}
 
@@ -185,9 +189,6 @@ for the construction of insurance tariff classes.
 - see also [spatial view](https://cran.r-project.org/view=Spatial) for analysis of spatial
 data.
 
-
-
-
 ## [A posteriori Experience pricing]{#AposteriorPricing}
 
 - `r pkg("actuar", priority = "core")` provides functions for credibility theory: the `cm()`
@@ -213,7 +214,7 @@ to set their own hazard rate model.
 Incurred but not reported claims (pure IBNR) and includes calculating pure IBNR 
 exposure with LogNormal and Gamma distribution for reporting delay.
 
-## [Risk and ruin theory]{#RiskRuin}
+## [Ruin theory]{#Ruin}
 
 - `r pkg("actuar", priority = "core")` provides infinite time ruin probability of 
 Cramér-Lundberg and Sparre Andersen models, using phase-type distributions
@@ -242,7 +243,7 @@ An initial set of test parameters, designed to mirror the experience of a real i
 portfolio, were set up and applied by default to generate a realistic test data set of 
 incurred histories.
 
-# [Reinsurance]{#Reinsurance}
+# [Reinsurance and extremes]{#Reinsurance}
 
 - for a comprehensive review of extreme value analysis, we refer to the [Extreme value view](https://cran.r-project.org/view=ExtremeValue)
 - `r pkg("ReIns", priority = "core")` follows the book "Reinsurance: Actuarial and 
@@ -253,8 +254,17 @@ Value-at-Risk (VaR), Conditional Tail Expectation (CTE) and excess-loss premium 
 - `r pkg("ExtremeRisks")` provides a set of procedures for estimating risks related to extreme events via risk measures such as Expectile, Value-at-Risk,...
 
 
+# [Risk measures]{#RiskMeasure}
+
+- `r pkg("actuar", priority = "core")` provides functions to compute value-at-risk, 
+conditional tail expectation. 
+- `r pkg("ActuarialM")`  computes Actuarial Measures such as expected shortfall and value-at-risk Using Bell G Family.
+
+
 # [Misc]{#Misc}
+
 ## [Data handling]{#Datahandling}
+
 - `r pkg("actuaryr")` contains functions to easily refer to the first or last (working) day 
 within a specific period relative to a base date to facilitate actuarial reporting 
 and to compare results.
@@ -267,6 +277,7 @@ the Australian Human Mortality Database (AHMD), the Canadian Human Mortality Dat
 the Japanese Mortality Database (JMD).
 
 ## [Mortality databases]{#MortData}
+
 - Human Mortality Database provides a collection of mortality datasets at [HMD](https://mortality.org/).
 - Australian database is available at [AHMD](https://aushd.org/)
 - Canadian database is available at [CHMD](http://www.bdlc.umontreal.ca/CHMD/)
@@ -301,6 +312,7 @@ also [SimulationMachine](https://github.com/kasaai/simulationmachine).
 
 
 ## [Documentation, on-line courses]{#Learn}
+
 - A collection of computer labs in R is provided by 
 [Antonio & Crevecoeur](https://katrienantonio.github.io/Risk-modelling-in-insurance/).
 - A series of book in French is proposed by Vincent Goulet 
