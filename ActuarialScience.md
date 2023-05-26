@@ -112,6 +112,10 @@ death counts and population exposure to risk using linear or log-quadratic model
 - `r pkg("MortalityGaps")` provides methods for forecasting male/female life expectancy 
 based on analysis of the gap between male/female life expectancy in a country compared 
 with the record level of female life expectancy in the world. 
+- `r pkg("GPRMortality")` estimate Bayesian statistical models for estimating child and adult 
+mortality rates which its data likelihood is mortality rates from different data sources 
+such as: Death Registration System, Censuses or surveys.
+
 
 ## [Survival analysis and portfolio experience:]{#PtfExperience}
 
