@@ -115,6 +115,9 @@ with the record level of female life expectancy in the world.
 - `r pkg("GPRMortality")` estimate Bayesian statistical models for estimating child and adult 
 mortality rates which its data likelihood is mortality rates from different data sources 
 such as: Death Registration System, Censuses or surveys.
+- `r pkg("IBMPopSim")` allows the efficient simulation of a wide class Individual Based Models 
+where individuals are marked by their date of birth and a set of (discrete or continuous) characteristics. 
+
 
 
 ## [Survival analysis and portfolio experience:]{#PtfExperience}
