@@ -91,10 +91,11 @@ models. This family of models encompasses many models proposed in the actuarial 
 literature including the Lee-Carter (1992) <doi:10.2307/2290201> and the Cairns-Blake-Dowd (2006)
 <doi:10.1111/j.1539-6975.2006.00195.x> models. It includes functions for fitting mortality models,
 analysing their goodness-of-fit and performing mortality projections and simulations.
-- `r pkg("apc")` provides functions for age-period-cohort analysis. It can deal with
-(i) Aggregate data can be organised in matrices indexed by age-cohort, age-period or cohort-period. 
-The data can include dose and response or just doses. A GLM allow a fit for 3,2,1 or 0 of the age-period-cohort factors.
-(ii) Individual-level data should have a row for each individual and columns for each of age, period, and cohort. A GLM allow to fit repeated cross-section model. 
+- `r pkg("apc")` provides functions for age-period-cohort analysis. 
+It can deal with (i) Aggregate data indexed by age-cohort, age-period or cohort-period, for
+which a GLM allow a fit for 3,2,1 or 0 of the age-period-cohort factors; (ii) 
+Individual-level data for each of age, period, and cohort for which a GLM allow 
+to fit repeated cross-section model. 
 - `r pkg("MortalityTables")` provides classes to implement and plot cohort life tables for 
 actuarial calculations. In particular, birth-year dependent mortality tables using a yearly 
 trend to extrapolate from a base year are implemented, as well as period life table, 
