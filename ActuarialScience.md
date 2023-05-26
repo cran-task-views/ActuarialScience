@@ -101,7 +101,8 @@ actuarial calculations. In particular, birth-year dependent mortality tables usi
 trend to extrapolate from a base year are implemented, as well as period life table, 
 cohort life tables using an age shift, and merged life tables.
 - `r pkg("StanMoMo")` implements of popular mortality models using the 'rstan' package, 
-which provides the R interface to the 'Stan' C++ library for Bayesian estimation. 
+which provides the R interface to the 'Stan' C++ library for Bayesian estimation,
+see also [Bayesian view](https://cran.r-project.org/view=Bayesian) for Bayesian inference.
 - `r pkg("MortCast")` provides estimation and projection methods for Kannisto and Lee-Carter 
 mortality models as well as methods blending. 
 - `r pkg("MortalityLaws")` provides 27 parametric mortality distributions and construct full
@@ -116,7 +117,10 @@ with the record level of female life expectancy in the world.
 mortality rates which its data likelihood is mortality rates from different data sources 
 such as: Death Registration System, Censuses or surveys.
 - `r pkg("IBMPopSim")` allows the efficient simulation of a wide class Individual Based Models 
-where individuals are marked by their date of birth and a set of (discrete or continuous) characteristics. 
+where individuals are marked by their date of birth and a set of (discrete or continuous)
+ characteristics. 
+- see also [epidemiology view](https://cran.r-project.org/view=Epidemiology) for epidemiology
+topics.
 
 
 
@@ -176,6 +180,9 @@ Tweedie model, see `r pkg("tweedie")`.
 - `r pkg("insurancerating")` helps actuaries to implement GLMs within all relevant steps 
 needed to construct a risk premium from raw data. It provides a data driven strategy 
 for the construction of insurance tariff classes.
+- see also [spatial view](https://cran.r-project.org/view=Spatial) for analysis of spatial
+data.
+
 
 
 
@@ -278,11 +285,22 @@ can have a hierarchical structure.
 and Tail Value-at-Risk (TVaR) but is archived. 
 - An Individual Claims Generator for Claims Reserving Studies is provided by Wang & Wuethrich
 at [IndividualClaimsSimulator](https://github.com/JSchelldorfer/IndividualClaimsSimulator/).
-- An Individual Claims History Simulation machine for annual cashflows is provided by Gabrielli & Wuethrich
-at [IndividualClaimsHistory](https://people.math.ethz.ch/~wueth/simulation.html).
+- An Individual Claims History Simulation machine for annual cashflows is provided 
+by Gabrielli & Wuethrich 
+at [IndividualClaimsHistory](https://people.math.ethz.ch/~wueth/simulation.html), see
+also [SimulationMachine](https://github.com/kasaai/simulationmachine).
 - [Cellar](https://cellar.kasa.ai/) is a collection of community-curated open datasets for insurance analytics. 
 
 
-
-
-
+## [Documentation, on-line courses]{#Learn}
+- A collection of computer labs in R is provided by 
+[Antonio & Crevecoeur](https://katrienantonio.github.io/Risk-modelling-in-insurance/).
+- A series of book in French is proposed by Vincent Goulet 
+on [Credibility](https://gitlab.com/vigou3/theorie-credibilite-avec-r),  
+on [Computational actuarial science](https://gitlab.com/vigou3/methodes-numeriques-en-actuariat).
+- see [Teaching view](https://cran.r-project.org/view=TeachingStatistics) for usual documentations
+on teaching statistics.
+- `r pkg("FinancialMath")` contains financial math functions and introductory 
+derivative functions included in the Society of Actuaries and Casualty Actuarial 
+Society 'Financial Mathematics' exam, and some topics in the 
+'Models for Financial Economics' exam.
