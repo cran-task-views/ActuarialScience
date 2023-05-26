@@ -38,7 +38,7 @@ R, 2nd edn, Springer <doi:10.1007/978-3-540-70998-5>.
 - Charpentier, A., ed. (2014), Computational Actuarial Science with R, Chapman and Hall-CRC.
 
 
-The maintainers gratefully acknowledge Patrice Kiener for his numerous comments and suggestions.
+The maintainers gratefully acknowledge Patrice Kiener, Quentin Guibert for their numerous comments and suggestions.
 
 
 ### Table of contents
@@ -76,7 +76,7 @@ contracts like annuities, whole life insurances or endowments with (discretionar
 profit participation. This package provides a framework to model such contracts
 in a very generic (cash-flow-based) way and includes modelling profit participation 
 schemes, dynamic increases or more general contract layers, as well as contract changes.
-
+- `r pkg("MortCast")` provides a function `life.table` to compute survival/death probabilities. 
 
 ## [Prospective mortality models:]{#Mortality}
 
@@ -101,6 +101,9 @@ trend to extrapolate from a base year are implemented, as well as period life ta
 cohort life tables using an age shift, and merged life tables.
 - `r pkg("StanMoMo")` implements of popular mortality models using the 'rstan' package, 
 which provides the R interface to the 'Stan' C++ library for Bayesian estimation. 
+- `r pkg("MortCast")` provides estimation and projection methods for Kannisto and Lee-Carter 
+mortality models as well as methods blending. 
+
 
 ## [Survival analysis and portfolio experience:]{#PtfExperience}
 
