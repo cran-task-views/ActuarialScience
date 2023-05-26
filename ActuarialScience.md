@@ -103,7 +103,7 @@ literature including the Lee-Carter (1992) <doi:10.2307/2290201> and the Cairns-
 analysing their goodness-of-fit and performing mortality projections and simulations.
 - `r pkg("apc")` provides functions for age-period-cohort analysis. 
 It can deal with (i) Aggregate data indexed by age-cohort, age-period or cohort-period, for
-which a GLM allow a fit for 3,2,1 or 0 of the age-period-cohort factors; (ii) 
+which a GLM allow a fit for 3, 2, 1 or 0 of the age-period-cohort factors; (ii) 
 Individual-level data for each of age, period, and cohort for which a GLM allow 
 to fit repeated cross-section model. 
 - `r pkg("MortalityTables")` provides classes to implement and plot cohort life tables for 
@@ -111,8 +111,7 @@ actuarial calculations. In particular, birth-year dependent mortality tables usi
 trend to extrapolate from a base year are implemented, as well as period life table, 
 cohort life tables using an age shift, and merged life tables.
 - `r pkg("StanMoMo")` implements of popular mortality models using the 'rstan' package, 
-which provides the R interface to the 'Stan' C++ library for Bayesian estimation,
-see also [Bayesian view](https://cran.r-project.org/view=Bayesian) for Bayesian inference.
+which provides the R interface to the 'Stan' C++ library for Bayesian estimation.
 - `r pkg("MortCast")` provides estimation and projection methods for Kannisto and Lee-Carter 
 mortality models as well as methods blending. 
 - `r pkg("MortalityLaws")` provides 27 parametric mortality distributions and construct full
@@ -129,14 +128,14 @@ such as: Death Registration System, Censuses or surveys.
 - `r pkg("IBMPopSim")` allows the efficient simulation of a wide class Individual Based Models 
 where individuals are marked by their date of birth and a set of (discrete or continuous)
  characteristics. 
-- see also [epidemiology view](https://cran.r-project.org/view=Epidemiology) for epidemiology
-topics.
 
+> See also the [Epidemiology Task View](https://cran.r-project.org/view=Epidemiology) for epidemiology topics and the [Bayesian Task View](https://cran.r-project.org/view=Bayesian) for Bayesian inference.
 
 
 ## [Survival analysis and portfolio experience]{#PtfExperience}
 
-- for a general overview of survival analysis, we refer to the [Survival Analysis view](https://cran.r-project.org/view=Survival)
+For a general overview of survival analysis, see the [Survival Analysis Task view](https://cran.r-project.org/view=Survival).
+
 - `r pkg("ELT")` provides functions to build experience life tables for three methods:
 the standardized mortality ratio, a semi-parametric relational model, a GLM Poisson with
 interactions between age and calendar years.
@@ -146,7 +145,7 @@ lifespan or at specific ages, as well as for overall mortality or for specific c
 
 ## [Life and pension reserving]{#LReserving}
 
-- computations can be carried out using `r pkg("lifecontingencies", priority = "core")`. 
+- `r pkg("lifecontingencies", priority = "core")` for many life and pension computations. 
 - `r pkg("SimBEL")` allows to carry out Monte-Carlo simulation of asset-liability cashflows
 for unit-linked insurance and retirement plans in France.
 - `r pkg("ESGtoolkit")` provides functions for Economic Scenario Generator models 
@@ -157,9 +156,9 @@ but is now archived.
 
 ## [Loss modeling]{#Loss}
 
-- for a detailed list of probability distributions, we refer to the [Distributions view](https://cran.r-project.org/view=Distributions)
+The [Distributions Task View](https://cran.r-project.org/view=Distributions) provides a detailed list of probability distributions available in base R and CRAN packages.
 
-- pioneer `r pkg("actuar", priority = "core")` package provides functions and data sets for
+- Pioneer `r pkg("actuar", priority = "core")` package provides functions and data sets for
 actuarial science: modeling of loss distributions; simulation of compound models, discrete 
 mixtures and compound hierarchical models. It support for many additional probability distributions
 to model insurance loss size and frequency: 23 continuous heavy tailed distributions 
@@ -178,19 +177,20 @@ plain, mixed or spliced distributions using Maximum Likelihood estimation and Ba
 - `r pkg("NetSimR")` provides capped mean, exposure curves and increased limit factor curves 
 (ILFs) for LogNormal, Gamma, Pareto, Sliced LogNormal-Pareto and Sliced Gamma-Pareto distributions. 
 
-## [A priori Insurance pricing]{#AprioriPricing}
+## [A priori insurance pricing]{#AprioriPricing}
 
-- (a priori) insurance pricing consists in fitting two models: one for claim frequency and
-one for claim severity. Classical models use GLM which are available in base R function `glm`.
-An alternative approch is to model directly the aggregate claim amount typically with a 
-Tweedie model, see `r pkg("tweedie")`.
-- more advanced statistical models can be found in the 
-[Econometrics view](https://cran.r-project.org/view=Econometrics), 
-[Machine learning view](https://cran.r-project.org/view=MachineLearning).
+A priori insurance pricing consists in fitting two models: one for claim frequency and one for claim severity. Classical pricing models rely on generalized linear models (GLM) that can be fitted in base R using `glm`.
+
+- An alternative approch is to model directly the aggregate claim amount typically with a Tweedie model, see `r pkg("tweedie")`.
 - `r pkg("insurancerating")` helps actuaries to implement GLMs within all relevant steps 
 needed to construct a risk premium from raw data. It provides a data driven strategy 
 for the construction of insurance tariff classes.
-- see also [spatial view](https://cran.r-project.org/view=Spatial) for analysis of spatial
+
+> More advanced statistical models can be found in the 
+[Econometrics Task View](https://cran.r-project.org/view=Econometrics) and 
+[Machine Learning Task View](https://cran.r-project.org/view=MachineLearning).
+
+> See also the [Spatial Task View](https://cran.r-project.org/view=Spatial) for analysis of spatial
 data.
 
 ## [A posteriori Experience pricing]{#AposteriorPricing}
@@ -214,9 +214,9 @@ insurance, including those to estimate the claims development result as required
 introduced in Hiabu (2017) <doi:10.1080/03461238.2016.1240709> and extensions that add 
 flexibility to the individual development factors modeling by allowing practitioners 
 to set their own hazard rate model.
-- `r pkg("NetSimR")` Provides functions that help model excess levels, capping and pure 
+- `r pkg("NetSimR")` provides functions that help model excess levels, capping and pure 
 Incurred but not reported claims (pure IBNR) and includes calculating pure IBNR 
-exposure with LogNormal and Gamma distribution for reporting delay.
+exposure with Lognormal and gamma distribution for reporting delay.
 
 ## [Ruin theory]{#Ruin}
 
@@ -249,13 +249,14 @@ incurred histories.
 
 # [Reinsurance and extremes]{#Reinsurance}
 
-- for a comprehensive review of extreme value analysis, we refer to the [Extreme value view](https://cran.r-project.org/view=ExtremeValue)
 - `r pkg("ReIns", priority = "core")` follows the book "Reinsurance: Actuarial and 
 Statistical Aspects" and provides basic extreme value theory (EVT) estimators and graphical methods,
 EVT estimators and graphical methods adapted for censored and/or truncated data,
 Splicing of mixed Erlang distributions with EVT distributions, 
 Value-at-Risk (VaR), Conditional Tail Expectation (CTE) and excess-loss premium estimates.
 - `r pkg("ExtremeRisks")` provides a set of procedures for estimating risks related to extreme events via risk measures such as Expectile, Value-at-Risk,...
+
+> For a comprehensive review of extreme value analysis, see the [Extreme Value Task View](https://cran.r-project.org/view=ExtremeValue).
 
 
 # [Risk measures]{#RiskMeasure}
@@ -288,7 +289,6 @@ the Japanese Mortality Database (JMD).
 - French regional database is available at [FRD](https://frdata.org/)
 - Japan database is available at [JMD](https://www.ipss.go.jp/p-toukei/JMD/index-en.asp)
 
-
 ## [Actuarial datasets]{#Datasets}
 
 - `r pkg("CASdatasets", priority = "core")` provides a large variety of actuarial datasets,
@@ -315,16 +315,15 @@ also [SimulationMachine](https://github.com/kasaai/simulationmachine).
 - [Cellar](https://cellar.kasa.ai/) is a collection of community-curated open datasets for insurance analytics. 
 
 
-## [Documentation, on-line courses]{#Learn}
+## [Documentation and on-line courses]{#Learn}
 
 - A collection of computer labs in R is provided by 
 [Antonio & Crevecoeur](https://katrienantonio.github.io/Risk-modelling-in-insurance/).
-- A series of book in French is proposed by Vincent Goulet 
-on [Credibility](https://gitlab.com/vigou3/theorie-credibilite-avec-r),  
-on [Computational actuarial science](https://gitlab.com/vigou3/methodes-numeriques-en-actuariat).
-- see [Teaching view](https://cran.r-project.org/view=TeachingStatistics) for usual documentations
-on teaching statistics.
+- A series of [textbooks in French](https://gitlab.com/vigou3) is proposed by Vincent Goulet, notably
+on [credibility theory](https://gitlab.com/vigou3/theorie-credibilite-avec-r), [loss modeling](https://vigou3.gitlab.io/modelisation-distributions-sinistres-avec-r/), and [numerical methods](https://gitlab.com/vigou3/methodes-numeriques-en-actuariat-avec-r).
 - `r pkg("FinancialMath")` contains financial math functions and introductory 
 derivative functions included in the Society of Actuaries and Casualty Actuarial 
 Society 'Financial Mathematics' exam, and some topics in the 
 'Models for Financial Economics' exam.
+
+> See the [Teaching Task View](https://cran.r-project.org/view=TeachingStatistics) for usual documentations on teaching statistics.
