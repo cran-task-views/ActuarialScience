@@ -12,6 +12,10 @@ suggestions from Patrice Kiener and Quentin Guibert.
 
 ### Table of contents
 - [Classical references on actuarial mathematics](#References)
+  - [Both life and non-life insurance](#ReferencesBoth)
+  - [Non-life insurance](#ReferencesNonLife)
+  - [Life insurance](#ReferencesLife)
+  - [Actuarial mathematics using R](#ReferencesWithR)
 - [Life Insurance](#Life) 
   - [Life contingencies](#LifeCont)
   - [Mortality laws and prospective mortality models](#Mortality)
@@ -34,32 +38,35 @@ suggestions from Patrice Kiener and Quentin Guibert.
 
 # [Classical references on actuarial mathematics]{#References}
 
-- Both life and non-life insurance
-  - Bowers, N. L., Gerber, H. U., Hickman, J. C., Jones, D. A. & Nesbitt, C. J. (1997), Actuarial
+## [Both life and non-life insurance]{#ReferencesBoth}
+
+- Bowers, N. L., Gerber, H. U., Hickman, J. C., Jones, D. A. & Nesbitt, C. J. (1997), Actuarial
 Mathematics, The Society of Actuaries.
-  - Teugels, J. & Sundt, B. (2004), Encyclopedia of Actuarial Science, Vol. 1, John Wiley & Sons
+- Teugels, J. & Sundt, B. (2004), Encyclopedia of Actuarial Science, Vol. 1, John Wiley & Sons
   <doi:10.1002/9780470012505>.
 
-- Non-life insurance
-  - Bühlmann, H. & Gisler, A. (2005), A Course in Credibility Theory and its Applications, Springer <doi:10.1007/3-540-29273-X>.
-  - Charpentier, A. & Denuit, M. (2004), Mathématiques de l’assurance non vie, Vol. 1 & 2, Economica.
-  - Frees, E. (2009), Regression Modeling with Actuarial and Financial Applications, International Series on Actuarial Science, Cambridge University Press <doi:10.1017/CBO9780511814372>.
-  - Jong, P. D. & Heller, G. (2008), Generalized Linear Models for Insurance Data, Cambridge University Press <doi:10.1017/CBO9780511755408>. 
-  - Klugman, S., Panjer, H. & Willmot, G. (2019), Loss Models : From Data to Decisions, 5th edn, Wiley.
-  - Taylor, G. (2000), Loss Reserving : An Actuarial Perspective, Kluwer Academic Publishers, Boston <doi:10.1007/978-1-4615-4583-5>.
-  - Wuethrich, M. & Merz, M. (2008), Stochastic Claims Reserving Methods in Insurance, Wiley Finance <doi:10.1002/9781119206262>.
+## [Non-life insurance]{#ReferencesNonLife}
 
-- Life insurance
-  - Dickson, D., Hardy, M. & Waters, H. (2013), Actuarial Mathematics for Life Contingent Risks, 2nd edn, Cambridge University Press <doi:10.1017/9781108784184>.
-  - Hardy, M. (2003), Investment Guarantees : Modeling and Risk Management for Equity-Linked Life Insurance, Wiley.
-  - Macdonald, A., Richard, S. & Currie, I. (2018), Modelling Mortality with Actuarial Applications, Cambridge University Press <doi:10.1017/9781107051386>.
-  - Moller, T. & Steffensen, M. (2007), Market-Valuation Methods in Life and Pension Insurance, Cambridge University Press <doi:10.1017/CBO9780511543289>.
+- Bühlmann, H. & Gisler, A. (2005), A Course in Credibility Theory and its Applications, Springer <doi:10.1007/3-540-29273-X>.
+- Charpentier, A. & Denuit, M. (2004), Mathématiques de l’assurance non vie, Vol. 1 & 2, Economica.
+- Frees, E. (2009), Regression Modeling with Actuarial and Financial Applications, International Series on Actuarial Science, Cambridge University Press <doi:10.1017/CBO9780511814372>.
+- Jong, P. D. & Heller, G. (2008), Generalized Linear Models for Insurance Data, Cambridge University Press <doi:10.1017/CBO9780511755408>. 
+- Klugman, S., Panjer, H. & Willmot, G. (2019), Loss Models : From Data to Decisions, 5th edn, Wiley.
+- Taylor, G. (2000), Loss Reserving : An Actuarial Perspective, Kluwer Academic Publishers, Boston <doi:10.1007/978-1-4615-4583-5>.
+- Wuethrich, M. & Merz, M. (2008), Stochastic Claims Reserving Methods in Insurance, Wiley Finance <doi:10.1002/9781119206262>.
 
-- Actuarial mathematics using R
-  - Charpentier, A., ed. (2014), Computational Actuarial Science with R, Chapman and Hall-CRC.
-  - Kaas, R., Goovaerts, M., Dhaene, J. & Denuit, M. (2008), Modern Actuarial Risk Theory Using
+## [Life insurance]{#ReferencesLife}
+
+- Dickson, D., Hardy, M. & Waters, H. (2013), Actuarial Mathematics for Life Contingent Risks, 2nd edn, Cambridge University Press <doi:10.1017/9781108784184>.
+- Hardy, M. (2003), Investment Guarantees : Modeling and Risk Management for Equity-Linked Life Insurance, Wiley.
+- Macdonald, A., Richard, S. & Currie, I. (2018), Modelling Mortality with Actuarial Applications, Cambridge University Press <doi:10.1017/9781107051386>.
+- Moller, T. & Steffensen, M. (2007), Market-Valuation Methods in Life and Pension Insurance, Cambridge University Press <doi:10.1017/CBO9780511543289>.
+
+## [Actuarial mathematics using R]{#ReferencesWithR}
+
+- Charpentier, A., ed. (2014), Computational Actuarial Science with R, Chapman and Hall-CRC.
+- Kaas, R., Goovaerts, M., Dhaene, J. & Denuit, M. (2008), Modern Actuarial Risk Theory Using
 R, 2nd edn, Springer <doi:10.1007/978-3-540-70998-5>.
-
 
 
 # [Life Insurance]{#Life}
