@@ -119,6 +119,9 @@ with the record level of female life expectancy in the world.
 - `r pkg("ELT")` provides functions to build experience life tables for three methods:
 the standardized mortality ratio, a semi-parametric relational model, a GLM Poisson with
 interactions between age and calendar years.
+- `r pkg("lemur")` allows the user to selected mortality changes over the entire 
+lifespan or at specific ages, as well as for overall mortality or for specific causes of death.
+
 
 ## [Life and pension reserving:]{#LReserving}
 
