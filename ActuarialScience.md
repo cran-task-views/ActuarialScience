@@ -57,11 +57,13 @@ The maintainers gratefully acknowledge Patrice Kiener, Quentin Guibert for their
 - [Reinsurance and extreme events](#Reinsurance)
 - [Misc](#Misc)
   - [Data handling](#Datahandling)
+  - [Mortality databases](#MortData)
   - [Actuarial datasets](#Datasets)
+  - [Documentation, on-line courses](#Learn)
 
-# [Life Insurance:]{#Life}
+# [Life Insurance]{#Life}
 
-## [Life contingencies:]{#LifeCont}
+## [Life contingencies]{#LifeCont}
 
 - `r pkg("lifecontingencies", priority = "core")` provides the most wanted functionalities
 for life actuarial mathematics, namely, survival/death probabilities, 
@@ -78,7 +80,7 @@ in a very generic (cash-flow-based) way and includes modelling profit participat
 schemes, dynamic increases or more general contract layers, as well as contract changes.
 - `r pkg("MortCast")` provides a function `life.table` to compute survival/death probabilities. 
 
-## [Mortality laws and prospective mortality models:]{#Mortality}
+## [Mortality laws and prospective mortality models]{#Mortality}
 
 - `r pkg("demography")` provides functions for demographic analysis including lifetable calculations;
 Lee-Carter modelling; functional data analysis of mortality rates, fertility rates, net migration
@@ -124,7 +126,7 @@ topics.
 
 
 
-## [Survival analysis and portfolio experience:]{#PtfExperience}
+## [Survival analysis and portfolio experience]{#PtfExperience}
 
 - for a general overview of survival analysis, we refer to the [Survival Analysis view](https://cran.r-project.org/view=Survival)
 - `r pkg("ELT")` provides functions to build experience life tables for three methods:
@@ -134,7 +136,7 @@ interactions between age and calendar years.
 lifespan or at specific ages, as well as for overall mortality or for specific causes of death.
 
 
-## [Life and pension reserving:]{#LReserving}
+## [Life and pension reserving]{#LReserving}
 
 - computations can be carried out using `r pkg("lifecontingencies", priority = "core")`. 
 - `r pkg("SimBEL")` allows to carry out Monte-Carlo simulation of asset-liability cashflows
@@ -143,7 +145,7 @@ for unit-linked insurance and retirement plans in France.
 but is now archived. 
  
 
-# [Non-Life Insurance:]{#NonLife}
+# [Non-Life Insurance]{#NonLife}
 
 ## [Loss modeling]{#Loss}
 
@@ -264,6 +266,12 @@ via a dedicated S3 class "Actuarial Experience Studies".
 the Australian Human Mortality Database (AHMD), the Canadian Human Mortality Database (CHMD),
 the Japanese Mortality Database (JMD).
 
+## [Mortality databases]{#MortData}
+- Human Mortality Database provides a collection of mortality datasets at [HMD](https://mortality.org/).
+- Australian database is available at [AHMD](https://aushd.org/)
+- Canadian database is available at [CHMD](http://www.bdlc.umontreal.ca/CHMD/)
+- French regional database is available at [FRD](https://frdata.org/)
+- Japan database is available at [JMD](https://www.ipss.go.jp/p-toukei/JMD/index-en.asp)
 
 
 ## [Actuarial datasets]{#Datasets}
