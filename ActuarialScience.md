@@ -13,7 +13,7 @@ Base R contains some functions for probabilistic and statistical models used for
 The two books dedicated to actuarial science in R are:
 
 - Charpentier, A., ed. (2014), Computational Actuarial Science with R, Chapman and Hall-CRC.
-- Kaas, R., Goovaerts, M., Dhaene, J. & Denuit, M. (2008), Modern Actuarial Risk Theory Using R, 2nd edn, Springer <doi:10.1007/978-3-540-70998-5>.
+- Kaas, R., Goovaerts, M., Dhaene, J. & Denuit, M. (2008), Modern Actuarial Risk Theory Using R, 2nd edn, Springer `r doi("10.1007/978-3-540-70998-5")`.
 
 
 The maintainers thank gratefully acknowledge the comments and
@@ -84,8 +84,8 @@ suggestions from Patrice Kiener and Quentin Guibert.
 - `r pkg("StMoMo")` implements of the family of generalised
   age-period-cohort stochastic mortality models. This family of models
   encompasses many models proposed in the actuarial and demographic
-  literature including the Lee-Carter (1992) <doi:10.2307/2290201> and
-  the Cairns-Blake-Dowd (2006) <doi:10.1111/j.1539-6975.2006.00195.x>
+  literature including the Lee-Carter (1992) `r doi("10.2307/2290201")` and
+  the Cairns-Blake-Dowd (2006) `r doi("10.1111/j.1539-6975.2006.00195.x")`
   models. It includes functions for fitting mortality models, analysing
   their goodness-of-fit and performing mortality projections and
   simulations.
@@ -232,7 +232,7 @@ using `glm`.
   as required under Solvency II.
 - `r pkg("clmplus")` implements the chain ladder model under the
   reverse time framework introduced in Hiabu (2017)
-  <doi:10.1080/03461238.2016.1240709> and extensions that add
+  `r doi("10.1080/03461238.2016.1240709")` and extensions that add
   flexibility to the individual development factors modeling by allowing
   practitioners to set their own hazard rate model.
 - `r pkg("NetSimR")` provides functions that help model excess levels,
@@ -390,38 +390,38 @@ using `glm`.
   Nesbitt, C. J. (1997), Actuarial Mathematics, The Society of
   Actuaries.
 - Teugels, J. & Sundt, B. (2004), Encyclopedia of Actuarial Science,
-  Vol. 1, John Wiley & Sons <doi:10.1002/9780470012505>.
+  Vol. 1, John Wiley & Sons `r doi("10.1002/9780470012505")`.
 
 ### Life insurance references
 
 - Dickson, D., Hardy, M. & Waters, H. (2013), Actuarial Mathematics
   for Life Contingent Risks, 2nd edn, Cambridge University Press
-  <doi:10.1017/9781108784184>.
+  `r doi("10.1017/9781108784184")`.
 - Hardy, M. (2003), Investment Guarantees : Modeling and Risk
   Management for Equity-Linked Life Insurance, Wiley.
 - Macdonald, A., Richard, S. & Currie, I. (2018), Modelling Mortality
   with Actuarial Applications, Cambridge University Press
-  <doi:10.1017/9781107051386>.
+  `r doi("10.1017/9781107051386")`.
 - Moller, T. & Steffensen, M. (2007), Market-Valuation Methods in Life
   and Pension Insurance, Cambridge University Press
-  <doi:10.1017/CBO9780511543289>.
+  `r doi("10.1017/CBO9780511543289")`.
 
 ### Non-life insurance references
 
 - Bühlmann, H. & Gisler, A. (2005), A Course in Credibility Theory and
-  its Applications, Springer <doi:10.1007/3-540-29273-X>.
+  its Applications, Springer `r doi("10.1007/3-540-29273-X")`.
 - Charpentier, A. & Denuit, M. (2004), Mathématiques de l’assurance
   non vie, Vol. 1 & 2, Economica.
 - Frees, E. (2009), Regression Modeling with Actuarial and Financial
   Applications, International Series on Actuarial Science, Cambridge
-  University Press <doi:10.1017/CBO9780511814372>.
+  University Press `r doi("10.1017/CBO9780511814372")`.
 - Jong, P. D. & Heller, G. (2008), Generalized Linear Models for
   Insurance Data, Cambridge University Press
-  <doi:10.1017/CBO9780511755408>.
+  `r doi("10.1017/CBO9780511755408")`.
 - Klugman, S., Panjer, H. & Willmot, G. (2019), Loss Models : From
   Data to Decisions, 5th edn, Wiley.
 - Taylor, G. (2000), Loss Reserving : An Actuarial Perspective, Kluwer
-  Academic Publishers, Boston <doi:10.1007/978-1-4615-4583-5>.
+  Academic Publishers, Boston `r doi("10.1007/978-1-4615-4583-5")`.
 - Wuethrich, M. & Merz, M. (2008), Stochastic Claims Reserving Methods
-  in Insurance, Wiley Finance <doi:10.1002/9781119206262>.
+  in Insurance, Wiley Finance `r doi("10.1002/9781119206262")`.
   
