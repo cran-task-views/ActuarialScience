@@ -11,35 +11,35 @@ The maintainers thank gratefully acknowledge the comments and
 suggestions from Patrice Kiener and Quentin Guibert.
 
 ### Table of contents
-- [Classical references on actuarial mathematics](#References)
-  - [Both life and non-life insurance](#ReferencesBoth)
-  - [Life insurance](#ReferencesLife)
-  - [Non-life insurance](#ReferencesNonLife)
-  - [Actuarial mathematics using R](#ReferencesWithR)
-- [Life Insurance](#Life) 
-  - [Life contingencies](#LifeCont)
-  - [Mortality laws and prospective mortality models](#Mortality)
-  - [Survival analysis and portfolio experience](#PtfExperience)
-  - [Life and pension reserving](#LReserving)
-- [Non Life Insurance](#NonLife) 
-  - [Loss modeling](#Loss)
-  - [Insurance pricing](#AprioriPricing)
-  - [Experience pricing](#AposteriorPricing)
-  - [Claim reserving](#NLReserving)
-  - [Ruin theory](#Ruin)
-  - [Claim generators](#ClaimGen)
-- [Reinsurance and extreme events](#Reinsurance)
-- [Risk measures](#RiskMeasure)
-- [Misc](#Misc)
-  - [Data handling](#Datahandling)
-  - [Mortality databases](#MortData)
-  - [Actuarial datasets](#Datasets)
-  - [Documentation, on-line courses](#Learn)
+- [Classical references on actuarial mathematics](#classical-references-on-actuarial-mathematics)
+  - [Both life and non-life insurance](#both-life-and-non-life-insurance)
+  - [Life insurance references](#life-insurance-references)
+  - [Non-life insurance references](#non-life-insurance-references)
+  - [Actuarial mathematics using R](#actuarial-mathematics-using-r)
+- [Life Insurance](#life-insurance) 
+  - [Life contingencies](#life-contingencies)
+  - [Mortality laws and prospective mortality models](#mortality-laws-and-prospective-mortality-models)
+  - [Survival analysis and portfolio experience](#survival-analysis-and-portfolio-experience)
+  - [Life and pension reserving](#life-reserving)
+- [Non Life Insurance](#non-life-insurance) 
+  - [Loss modeling](#loss-modeling)
+  - [Insurance pricing](#a-priori-insurance-pricing)
+  - [Experience pricing](#a-posteriori-experience-pricing)
+  - [Claim reserving](#claim-reserving)
+  - [Ruin theory](#ruin-theory)
+  - [Claim generators](#claim-generators)
+- [Reinsurance and extreme events](#reinsurance-and-extreme-events)
+- [Risk measures](#risk-measures)
+- [Misc](#misc)
+  - [Data handling](#data-handling)
+  - [Mortality databases](#mortality-databases)
+  - [Actuarial datasets](#actuarial-datasets)
+  - [Documentation, on-line courses](#documentation-on-line-courses)
 
 
-# [Classical references on actuarial mathematics]{#References}
+# Classical references on actuarial mathematics
 
-## [Both life and non-life insurance]{#ReferencesBoth}
+## Both life and non-life insurance
 
 - Bowers, N. L., Gerber, H. U., Hickman, J. C., Jones, D. A. &
   Nesbitt, C. J. (1997), Actuarial Mathematics, The Society of
@@ -47,7 +47,7 @@ suggestions from Patrice Kiener and Quentin Guibert.
 - Teugels, J. & Sundt, B. (2004), Encyclopedia of Actuarial Science,
   Vol. 1, John Wiley & Sons <doi:10.1002/9780470012505>.
 
-## [Life insurance]{#ReferencesLife}
+## Life insurance references
 
 - Dickson, D., Hardy, M. & Waters, H. (2013), Actuarial Mathematics
   for Life Contingent Risks, 2nd edn, Cambridge University Press
@@ -61,7 +61,7 @@ suggestions from Patrice Kiener and Quentin Guibert.
   and Pension Insurance, Cambridge University Press
   <doi:10.1017/CBO9780511543289>.
 
-## [Non-life insurance]{#ReferencesNonLife}
+## Non-life insurance references
 
 - Bühlmann, H. & Gisler, A. (2005), A Course in Credibility Theory and
   its Applications, Springer <doi:10.1007/3-540-29273-X>.
@@ -80,7 +80,7 @@ suggestions from Patrice Kiener and Quentin Guibert.
 - Wuethrich, M. & Merz, M. (2008), Stochastic Claims Reserving Methods
   in Insurance, Wiley Finance <doi:10.1002/9781119206262>.
 
-## [Actuarial mathematics using R]{#ReferencesWithR}
+## Actuarial mathematics using R
 
 - Charpentier, A., ed. (2014), Computational Actuarial Science with R,
   Chapman and Hall-CRC.
@@ -89,9 +89,9 @@ suggestions from Patrice Kiener and Quentin Guibert.
   <doi:10.1007/978-3-540-70998-5>.
 
 
-# [Life Insurance]{#Life}
+# Life Insurance
 
-## [Life contingencies]{#LifeCont}
+## Life contingencies
 
 - `r pkg("lifecontingencies", priority = "core")` provides the most
   wanted functionalities for life actuarial mathematics, namely,
@@ -171,7 +171,7 @@ suggestions from Patrice Kiener and Quentin Guibert.
 > [Bayesian Task View](https://cran.r-project.org/view=Bayesian) for
 > Bayesian inference.
 
-## [Survival analysis and portfolio experience]{#PtfExperience}
+## Survival analysis and portfolio experience
 
 For a general overview of survival analysis, see the [Survival
 Analysis Task view](https://cran.r-project.org/view=Survival).
@@ -184,7 +184,7 @@ Analysis Task view](https://cran.r-project.org/view=Survival).
   the entire lifespan or at specific ages, as well as for overall
   mortality or for specific causes of death.
 
-## [Life and pension reserving]{#LReserving}
+## Life and pension reserving
 
 - `r pkg("lifecontingencies", priority = "core")` for many life and
   pension computations.
@@ -195,9 +195,9 @@ Analysis Task view](https://cran.r-project.org/view=Survival).
   Scenario Generator models.
   
 
-# [Non-Life Insurance]{#NonLife}
+# Non-Life Insurance
 
-## [Loss modeling]{#Loss}
+## Loss modeling
 
 The [Distributions Task View](https://cran.r-project.org/view=Distributions) 
 provides a detailed list of probability distributions available in
@@ -229,7 +229,7 @@ base R and CRAN packages.
   increased limit factor curves (ILFs) for lognormal, gamma, Pareto,
   sliced lognormal-Pareto and sliced gamma-Pareto distributions.
   
-## [A priori insurance pricing]{#AprioriPricing}
+## A priori insurance pricing
 
 A priori insurance pricing consists in fitting two models: one for
 claim frequency and one for claim severity. Classical pricing models
@@ -250,7 +250,7 @@ using `glm`.
 > See also the [Spatial Task View](https://cran.r-project.org/view=Spatial) 
 > for analysis of spatial data.
 
-## [A posteriori Experience pricing]{#AposteriorPricing}
+## A posteriori Experience pricing
 
 - `r pkg("actuar", priority = "core")` provides functions for
   credibility theory: `cm` is the unified front end for credibility
@@ -265,7 +265,7 @@ using `glm`.
 - `r pkg("nlirms")` (**archived**) provided a rate-making system based
   on a bonus-malus system introduced by Lemaire (1995).
 
-## [Claim reserving]{#NLReserving}
+## Claim reserving
 
 - `r pkg("ChainLadder", priority = "core")` provides various
   statistical methods and models which are typically used for the
@@ -282,7 +282,7 @@ using `glm`.
   includes calculating pure IBNR exposure with Lognormal and gamma
   distribution for reporting delay.
 
-## [Ruin theory]{#Ruin}
+## Ruin theory
 
 - `r pkg("actuar", priority = "core")` provides infinite time ruin
   probability of Cramér-Lundberg and Sparre Andersen models, using
@@ -298,7 +298,7 @@ using `glm`.
   Sparre Andersen models by including capital injections, that are
   positive jumps.
 
-## [Claim generators]{#ClaimGen}
+## Claim generators
 
 - `r pkg("SynthETIC")` creates an individual claims simulator which
   generates various features of non-life insurance claims. An initial
@@ -320,7 +320,7 @@ using `glm`.
   incurred histories.
 
 
-# [Reinsurance and extremes]{#Reinsurance}
+# Reinsurance and extremes
 
 - `r pkg("ReIns", priority = "core")` follows the book "Reinsurance:
   Actuarial and Statistical Aspects" and provides basic extreme value
@@ -337,7 +337,7 @@ using `glm`.
 > [Extreme Value Task View](https://cran.r-project.org/view=ExtremeValue).
 
 
-# [Risk measures]{#RiskMeasure}
+# Risk measures
 
 - `r pkg("actuar", priority = "core")` provides functions to compute
   Value-at-Risk and conditional tail expectation.
@@ -345,9 +345,9 @@ using `glm`.
   shortfall and Value-at-Risk using the Bell G family.
 
 
-# [Misc]{#Misc}
+# Misc
 
-## [Data handling]{#Datahandling}
+## Data handling
 
 - `r pkg("actuaryr")` contains functions to easily refer to the first
   or last (working) day within a specific period relative to a base date
@@ -362,7 +362,7 @@ using `glm`.
   (AHMD), the Canadian Human Mortality Database (CHMD), the Japanese
   Mortality Database (JMD).
 
-## [Mortality databases]{#MortData}
+## Mortality databases
 
 - Human Mortality Database provides a collection of mortality datasets
   at [HMD](https://mortality.org).
@@ -373,7 +373,7 @@ using `glm`.
 - Japan database is available at
   [JMD](https://www.ipss.go.jp/p-toukei/JMD/index-en.asp)
 
-## [Actuarial datasets]{#Datasets}
+## Actuarial datasets
 
 - `r pkg("CASdatasets", priority = "core")` provides a large variety
  of actuarial datasets, originally for the book *Computational
@@ -404,7 +404,7 @@ using `glm`.
 - [Cellar](https://cellar.kasa.ai/) is a collection of
   community-curated open datasets for insurance analytics.
 
-## [Documentation and on-line courses]{#Learn}
+## Documentation and on-line courses
 
 - A collection of computer labs in R is provided by [Antonio &
   Crevecoeur](https://katrienantonio.github.io/Risk-modelling-in-insurance/).
