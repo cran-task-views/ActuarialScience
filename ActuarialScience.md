@@ -361,6 +361,8 @@ using `glm`.
   see also [SimulationMachine](https://github.com/kasaai/simulationmachine).
 - [Cellar](https://cellar.kasa.ai/) is a collection of
   community-curated open datasets for insurance analytics.
+- `r pkg("DDPM")` provides some insurance-related datasets: some are already in 
+`r pkg("CASdatasets")`.  
 
 ## Documentation and on-line courses
 
