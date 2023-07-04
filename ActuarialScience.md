@@ -70,12 +70,12 @@ See also the `r view("Epidemiology")` for epidemiology topics and the `r view("B
 For a general overview of survival analysis, see the `r view("Survival")`.
 
 - `r pkg("ELT")` provides functions to build experience life tables for three methods: the standardized mortality ratio, a semi-parametric relational model, a GLM Poisson with interactions between age and calendar years.
-- `r pkg("lemur")` allows the user to selected mortality changes over the entire lifespan or at specific ages, as well as for overall mortality or for specific causes of death.
+- `r github("mpascariu/lemur")` allows the user to selected mortality changes over the entire lifespan or at specific ages, as well as for overall mortality or for specific causes of death.
 
 #### Life and pension reserving
 
 - `r pkg("lifecontingencies", priority = "core")` for many life and pension computations.
-- `r pkg("SimBEL")` allows to carry out Monte-Carlo simulation of asset-liability cashflows for unit-linked insurance and retirement plans in France.
+- `r github("primact/SimBEL")` allows to carry out Monte-Carlo simulation of asset-liability cashflows for unit-linked insurance and retirement plans in France.
 
 
 ### Non-Life Insurance
