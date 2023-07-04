@@ -3,7 +3,7 @@ name: ActuarialScience
 topic: Actuarial science
 maintainer: Christophe Dutang, Vincent Goulet
 email: dutangc@gmail.com
-version: 2023-05-11
+version: 2023-07-04
 source: https://github.com/cran-task-views/ActuarialScience/
 ---
 
@@ -63,11 +63,11 @@ The maintainers gratefully acknowledge the comments and suggestions from Patrice
 - `r pkg("GPRMortality")` estimate Bayesian statistical models for estimating child and adult mortality rates which its data likelihood is mortality rates from different data sources such as: Death Registration System, Censuses or surveys.
 - `r pkg("IBMPopSim")` allows the efficient simulation of a wide class Individual Based Models where individuals are marked by their date of birth and a set of (discrete or continuous) characteristics.
 
-See also the [Epidemiology Task View](https://cran.r-project.org/view=Epidemiology) for epidemiology topics and the [Bayesian Task View](https://cran.r-project.org/view=Bayesian) for Bayesian inference.
+See also the `r view("Epidemiology")` for epidemiology topics and the `r view("Bayesian")` for Bayesian inference.
 
 #### Survival analysis and portfolio experience
 
-For a general overview of survival analysis, see the [Survival Analysis Task view](https://cran.r-project.org/view=Survival).
+For a general overview of survival analysis, see the `r view("Survival")`.
 
 - `r pkg("ELT")` provides functions to build experience life tables for three methods: the standardized mortality ratio, a semi-parametric relational model, a GLM Poisson with interactions between age and calendar years.
 - `r pkg("lemur")` allows the user to selected mortality changes over the entire lifespan or at specific ages, as well as for overall mortality or for specific causes of death.
@@ -82,7 +82,7 @@ For a general overview of survival analysis, see the [Survival Analysis Task vie
 
 #### Loss modeling
 
-The [Distributions Task View](https://cran.r-project.org/view=Distributions) provides a detailed list of probability distributions available in base R and CRAN packages.
+The `r view("Distributions")` provides a detailed list of probability distributions available in base R and CRAN packages.
 
 - Pioneer package `r pkg("actuar", priority = "core")` provides functions and data sets for actuarial science: modeling of loss distributions; simulation of compound models, discrete mixtures and compound hierarchical models. It support for many additional probability distributions to model insurance loss size and frequency: 23 continuous heavy tailed distributions (e.g. the Feller-Pareto family of distributions); the Poisson-inverse Gaussian discrete distribution; zero-truncated and zero-modified extensions of the standard discrete distributions as well as phase-type distributions.
 - `r pkg("fitdistrplus")` provides a user-friendly function to fit discrete/continuous probability distributions based on maximum likelihood estimation, quantile matching estimation, moment matching estimation, etc. Starting values for numerical algorithms for loss distributions of `r pkg("actuar", priority = "core")` are provided.
@@ -97,7 +97,7 @@ A priori insurance pricing consists in fitting two models: one for claim frequen
 - `r pkg("tweedie")` allows an alternative approach to model the aggregate claim amount directly using a Tweedie model.
 - `r pkg("insurancerating")` helps actuaries to implement GLMs with all relevant steps needed to construct a risk premium from raw data. It provides a data driven strategy for the construction of insurance tariff classes.
 
-More advanced statistical models can be found in the [Econometrics Task View](https://cran.r-project.org/view=Econometrics) and the [Machine Learning Task View](https://cran.r-project.org/view=MachineLearning). See also the [Spatial Task View](https://cran.r-project.org/view=Spatial) for analysis of spatial data.
+More advanced statistical models can be found in the `r view("Econometrics")` and the `r view("MachineLearning")`. See also the `r view("Spatial")` for analysis of spatial data.
 
 #### A posteriori experience pricing
 
@@ -126,7 +126,7 @@ More advanced statistical models can be found in the [Econometrics Task View](ht
 - `r pkg("ReIns", priority = "core")` follows the book "Reinsurance: Actuarial and Statistical Aspects" and provides basic extreme value theory (EVT) estimators and graphical methods, EVT estimators and graphical methods adapted for censored and/or truncated data, Splicing of mixed Erlang distributions with EVT distributions, Value-at-Risk (VaR), Conditional Tail Expectation (CTE) and excess-loss premium estimates.
 - `r pkg("ExtremeRisks")` provides a set of procedures for estimating risks related to extreme events via risk measures such as Expectile, Value-at-Risk, etc.
 
-For a comprehensive review of extreme value analysis, see the [Extreme Value Task View](https://cran.r-project.org/view=ExtremeValue).
+For a comprehensive review of extreme value analysis, see the `r view("ExtremeValue")`.
 
 
 ### Risk measures
@@ -154,12 +154,12 @@ For a comprehensive review of extreme value analysis, see the [Extreme Value Tas
 
 #### Actuarial datasets
 
-- `r pkg("CASdatasets")` provides a large variety of actuarial datasets, originally for the book *Computational Actuarial Science with R*. Note that the package is not hosted on CRAN but at [CNRS](http://dutangc.perso.math.cnrs.fr/RRepository/) and [UQAM](http://cas.uqam.ca/).
+- `r github("dutangc/CASdatasets")` provides a large variety of actuarial datasets, originally for the book *Computational Actuarial Science with R*. Note that the package is not hosted on CRAN but on github, at [CNRS](http://dutangc.perso.math.cnrs.fr/RRepository/) and [UQAM](http://cas.uqam.ca/).
 - `r pkg("raw")` organizes several sets of publicly available data of interest to non-life actuaries.
 - `r pkg("insuranceData")` provides insurance datasets, which are often used in claims severity and claims frequency modelling. It helps testing new regression models in those problems, such as GLM, GLMM, HGLM, non-linear mixed models.
 - `r pkg("actuar")` provides functions to facilitate the generation of random variates from various probability models commonly used in actuarial applications, such as discrete mixtures and compound models where both the frequency and the severity components can have a hierarchical structure.
-- An individual claims generator for claims reserving studies is provided by Wang & Wuethrich at [IndividualClaimsSimulator](https://github.com/JSchelldorfer/IndividualClaimsSimulator/).
-- An individual claims history simulation machine for annual cashflows is provided by Gabrielli & Wuethrich at [IndividualClaimsHistory](https://people.math.ethz.ch/~wueth/simulation.html); see also [SimulationMachine](https://github.com/kasaai/simulationmachine).
+- An individual claims generator for claims reserving studies is provided by Wang & Wuethrich at `r github("JSchelldorfer/IndividualClaimsSimulator")`.
+- An individual claims history simulation machine for annual cashflows is provided by Gabrielli & Wuethrich at [IndividualClaimsHistory](https://people.math.ethz.ch/~wueth/simulation.html); see also `r github("kasaai/simulationmachine")` [SimulationMachine](https://github.com/kasaai/simulationmachine).
 - [Cellar](https://cellar.kasa.ai/) is a collection of community-curated open datasets for insurance analytics.
 - `r pkg("DDPM")` provides some insurance-related datasets, some already in `r pkg("CASdatasets")`.
 
@@ -169,27 +169,27 @@ For a comprehensive review of extreme value analysis, see the [Extreme Value Tas
 - A series of [textbooks in French](https://gitlab.com/vigou3) is proposed by Vincent Goulet, notably on [credibility theory](https://gitlab.com/vigou3/theorie-credibilite-avec-r), [loss modeling](https://vigou3.gitlab.io/modelisation-distributions-sinistres-avec-r/), and [numerical methods](https://gitlab.com/vigou3/methodes-numeriques-en-actuariat-avec-r).
 - `r pkg("FinancialMath")` contains financial math functions and introductory derivative functions included in the Society of Actuaries and Casualty Actuarial Society *Financial Mathematics* exam, and some topics in the *Models for Financial Economics* exam.
 
-See the [Teaching Task View](https://cran.r-project.org/view=TeachingStatistics) for usual documentation on teaching statistics.
+See the `r view("TeachingStatistics")` for usual documentation on teaching statistics.
 
 
-### Links
+## Links
 
-#### Actuarial science using R references
+### Actuarial science using R references
 
-- Charpentier, A., ed. (2014), Computational Actuarial Science with R, Chapman and Hall-CRC.
+- Charpentier, A., ed. (2014), Computational Actuarial Science with R, Chapman and Hall-CRC `r doi("10.1201/b17230")`.
 - Actuarial science using R: Kaas, R., Goovaerts, M., Dhaene, J. & Denuit, M. (2008), Modern Actuarial Risk Theory Using R, 2nd edn, Springer `r doi("10.1007/978-3-540-70998-5")`.
 
 - Bowers, N. L., Gerber, H. U., Hickman, J. C., Jones, D. A. & Nesbitt, C. J. (1997), Actuarial Mathematics, The Society of Actuaries.
 - Teugels, J. & Sundt, B. (2004), Encyclopedia of Actuarial Science, Vol. 1, John Wiley & Sons `r doi("10.1002/9780470012505")`.
 
-#### Life insurance references
+### Life insurance references
 
 - Dickson, D., Hardy, M. & Waters, H. (2013), Actuarial Mathematics for Life Contingent Risks, 2nd edn, Cambridge University Press `r doi("10.1017/9781108784184")`.
 - Hardy, M. (2003), Investment Guarantees : Modeling and Risk Management for Equity-Linked Life Insurance, Wiley.
 - Macdonald, A., Richard, S. & Currie, I. (2018), Modelling Mortality with Actuarial Applications, Cambridge University Press `r doi("10.1017/9781107051386")`.
 - Moller, T. & Steffensen, M. (2007), Market-Valuation Methods in Life and Pension Insurance, Cambridge University Press `r doi("10.1017/CBO9780511543289")`.
 
-#### Non-life insurance references
+### Non-life insurance references
 
 - Bühlmann, H. & Gisler, A. (2005), A Course in Credibility Theory and its Applications, Springer `r doi("10.1007/3-540-29273-X")`.
 - Charpentier, A. & Denuit, M. (2004), Mathématiques de l’assurance non vie, Vol. 1 & 2, Economica.
