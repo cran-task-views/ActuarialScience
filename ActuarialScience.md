@@ -142,7 +142,7 @@ For a comprehensive review of extreme value analysis, see the `r view("ExtremeVa
 - `r pkg("actuaryr")` contains functions to easily refer to the first or last (working) day within a specific period relative to a base date to facilitate actuarial reporting and to compare results.
 - `r pkg("eiopaR")` provides EIOPA (European Insurance And Occupational Pensions Authority) risk-free rates.
 - `r pkg("actxps")` helps to prepare data, summarize results, and create reports via a dedicated S3 class *Actuarial Experience Studies*.
-- `r pkg("MortalityLaws")` provides functions to read from the Human Mortality Database (HMD), the Australian Human Mortality Database (AHMD), the Canadian Human Mortality Database (CHMD), the Japanese Mortality Database (JMD).
+
 
 #### Mortality databases
 

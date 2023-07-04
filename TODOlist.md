@@ -18,3 +18,7 @@
 - [X] If you want to hyperlink DOIs, you can easily do so with the `r doi("...")` tag. 
 - [x] You use `> ` quotes for the text that refers to other task views. I don't think this is really necessary. I would put this in regular text.
 - [ ] the "Mortality databases" section is hard to parse if you miss the package description of `MortalityLaws` in the previous section. I would recommend putting the links into the dedicated `### Links` section at the end of the task view and mention this in the description of the `MortalityLaws` package. 
+
+## Other topics
+
+- [] keep an eye on the archived package `MortalityLaws`.
