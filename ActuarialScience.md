@@ -146,11 +146,13 @@ For a comprehensive review of extreme value analysis, see the `r view("ExtremeVa
 
 #### Mortality databases
 
-- Human Mortality Database provides a collection of mortality datasets at [HMD](https://mortality.org).
+Mortality databases are generally provided by demography and/or statistical institutes by each country (see below). However, the Human Mortality Database project at [HMD](https://mortality.org) provides a collection of reliable mortality datasets after a careful and very detailed protocol. [HMD](https://mortality.org) is a keystone for actuaries to compute reliable mortality/longevity estimates.
+
 - Australian database is available at [AHMD](https://aushd.org/)
 - Canadian database is available at [CHMD](http://www.bdlc.umontreal.ca/CHMD/)
 - French regional database is available at [FRD](https://frdata.org/)
 - Japan database is available at [JMD](https://www.ipss.go.jp/p-toukei/JMD/index-en.asp)
+- United States database is available at [USMD](https://usa.mortality.org/)
 
 #### Actuarial datasets
 
@@ -159,7 +161,7 @@ For a comprehensive review of extreme value analysis, see the `r view("ExtremeVa
 - `r pkg("insuranceData")` provides insurance datasets, which are often used in claims severity and claims frequency modelling. It helps testing new regression models in those problems, such as GLM, GLMM, HGLM, non-linear mixed models.
 - `r pkg("actuar")` provides functions to facilitate the generation of random variates from various probability models commonly used in actuarial applications, such as discrete mixtures and compound models where both the frequency and the severity components can have a hierarchical structure.
 - An individual claims generator for claims reserving studies is provided by Wang & Wuethrich at `r github("JSchelldorfer/IndividualClaimsSimulator")`.
-- An individual claims history simulation machine for annual cashflows is provided by Gabrielli & Wuethrich at [IndividualClaimsHistory](https://people.math.ethz.ch/~wueth/simulation.html); see also `r github("kasaai/simulationmachine")` [SimulationMachine](https://github.com/kasaai/simulationmachine).
+- An individual claims history simulation machine for annual cashflows is provided by Gabrielli & Wuethrich at [IndividualClaimsHistory](https://people.math.ethz.ch/~wueth/simulation.html); see also `r github("kasaai/simulationmachine")`.
 - [Cellar](https://cellar.kasa.ai/) is a collection of community-curated open datasets for insurance analytics.
 - `r pkg("DDPM")` provides some insurance-related datasets, some already in `r pkg("CASdatasets")`.
 
