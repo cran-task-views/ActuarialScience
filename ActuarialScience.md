@@ -34,7 +34,7 @@ The maintainers gratefully acknowledge the comments and suggestions from Patrice
   - [Mortality databases](#mortality-databases)
   - [Actuarial datasets](#actuarial-datasets)
   - [Documentation, on-line courses](#documentation-on-line-courses)
-- [Related links](#links)
+- [Related links](#bibliography)
   - [Actuarial science using R](#actuarial-science-using-r-references)
   - [Life insurance references](#life-insurance-references)
   - [Non-life insurance references](#non-life-insurance-references)
@@ -174,7 +174,7 @@ Mortality databases are generally provided by demography and/or statistical inst
 See the `r view("TeachingStatistics")` for usual documentation on teaching statistics.
 
 
-## Links
+## Bibliography
 
 ### Actuarial science using R references
 
