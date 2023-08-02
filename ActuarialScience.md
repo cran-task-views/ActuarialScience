@@ -9,7 +9,7 @@ source: https://github.com/cran-task-views/ActuarialScience/
 
 Actuaries are experts in evaluating the likelihood and financial consequences of future events. A pivotal part of their work is the modeling of the size and frequency of insurance claims. With probability models for the claims process in hand, actuaries can compute insurance premiums, determine the amount a company has to set aside in its actuarial reserve to cope with future events, evaluate the risk the company will not be able to meet its obligations, elaborate optimal investment strategies for its assets, or run simulations to compare business strategies or solve otherwise untractable problems.
 
-Base R contains a wide array of functions for probabilistic and statistical models used in actuarial mathematics. Nevertheless, a number of packages have been developed to extend or ease actuarial computations. Due to the intrinsically interdisciplinary nature of actuarial science, this view intersects with `r view("Distributions")`, `r view("Econometrics")`, `r view("ExtremeValue")`, and `r view("Finance")`.
+Base R contains a wide array of functions for probabilistic and statistical models used in actuarial mathematics. Nevertheless, a number of packages have been developed to extend or ease actuarial computations. Due to the intrinsically interdisciplinary nature of actuarial science, this view intersects with other views `r view("Distributions")`, `r view("Econometrics")`, `r view("ExtremeValue")`, and `r view("Finance")`.
 
 The maintainers gratefully acknowledge the comments and suggestions from Patrice Kiener and Quentin Guibert.
 If you think that some package is missing from the list, please let us know, either via e-mail to the maintainer or by submitting an issue or pull request in the GitHub repository linked above.
@@ -61,14 +61,14 @@ If you think that some package is missing from the list, please let us know, eit
 - `r pkg("MortCast")` provides estimation and projection methods for Kannisto and Lee-Carter mortality models, as well as methods blending.
 - `r pkg("MortalityLaws")` provides 27 parametric mortality distributions and construct full or abridged life tables given various input indices.
 - `r pkg("MortalityGaps")` provides methods for forecasting male/female life expectancy based on analysis of the gap between male/female life expectancy in a country compared with the record level of female life expectancy in the world.
-- `r pkg("GPRMortality")` estimate Bayesian statistical models for estimating child and adult mortality rates which its data likelihood is mortality rates from different data sources such as: Death Registration System, Censuses or surveys.
-- `r pkg("IBMPopSim")` allows the efficient simulation of a wide class Individual Based Models where individuals are marked by their date of birth and a set of (discrete or continuous) characteristics.
+- `r pkg("GPRMortality")` estimate Bayesian statistical models for estimating child and adult mortality rates which its data likelihood is mortality rates from different data sources such as: death registration system, Censuses or surveys.
+- `r pkg("IBMPopSim")` allows the efficient simulation of a wide class of individual based models where individuals are marked by their date of birth and a set of (discrete or continuous) characteristics.
 
-See also the `r view("Epidemiology")` for epidemiology topics and the `r view("Bayesian")` for Bayesian inference.
+See also the view `r view("Epidemiology")` for epidemiology topics and the view `r view("Bayesian")` for Bayesian inference.
 
 #### Survival analysis and portfolio experience
 
-For a general overview of survival analysis, see the `r view("Survival")`.
+For a general overview of survival analysis, see the view `r view("Survival")`.
 
 - `r pkg("ELT")` provides functions to build experience life tables for three methods: the standardized mortality ratio, a semi-parametric relational model, a GLM Poisson with interactions between age and calendar years.
 - `r github("mpascariu/lemur")` allows the user to selected mortality changes over the entire lifespan or at specific ages, as well as for overall mortality or for specific causes of death.
@@ -83,7 +83,8 @@ For a general overview of survival analysis, see the `r view("Survival")`.
 
 #### Loss modeling
 
-The `r view("Distributions")` provides a detailed list of probability distributions available in base R and CRAN packages.
+The view `r view("Distributions")` provides a detailed list of probability distributions available in base R and CRAN packages.
+Here we focus only on packages that implement distributions particularly designed for actuarial science.
 
 - Pioneer package `r pkg("actuar", priority = "core")` provides functions and data sets for actuarial science: modeling of loss distributions; simulation of compound models, discrete mixtures and compound hierarchical models. It support for many additional probability distributions to model insurance loss size and frequency: 23 continuous heavy tailed distributions (e.g. the Feller-Pareto family of distributions); the Poisson-inverse Gaussian discrete distribution; zero-truncated and zero-modified extensions of the standard discrete distributions as well as phase-type distributions.
 - `r pkg("fitdistrplus")` provides a user-friendly function to fit discrete/continuous probability distributions based on maximum likelihood estimation, quantile matching estimation, moment matching estimation, etc. Starting values for numerical algorithms for loss distributions of `r pkg("actuar", priority = "core")` are provided.
@@ -98,7 +99,7 @@ A priori insurance pricing consists in fitting two models: one for claim frequen
 - `r pkg("tweedie")` allows an alternative approach to model the aggregate claim amount directly using a Tweedie model.
 - `r pkg("insurancerating")` helps actuaries to implement GLMs with all relevant steps needed to construct a risk premium from raw data. It provides a data driven strategy for the construction of insurance tariff classes.
 
-More advanced statistical models can be found in the `r view("Econometrics")` and the `r view("MachineLearning")`. See also the `r view("Spatial")` for analysis of spatial data.
+More advanced statistical models can be found in the views `r view("Econometrics")` and `r view("MachineLearning")`. See also the view `r view("Spatial")` for analysis of spatial data.
 
 #### A posteriori experience pricing
 
@@ -109,7 +110,7 @@ More advanced statistical models can be found in the `r view("Econometrics")` an
 
 - `r pkg("ChainLadder", priority = "core")` provides various statistical methods and models which are typically used for the estimation of outstanding claims reserves in non-life insurance, including those to estimate the claims development result as required under Solvency II.
 - `r pkg("clmplus")` implements the chain ladder model under the reverse time framework introduced in Hiabu (2017) `r doi("10.1080/03461238.2016.1240709")` and extensions that add flexibility to the individual development factors modeling by allowing practitioners to set their own hazard rate model.
-- `r pkg("NetSimR")` provides functions that help model excess levels, capping and pure Incurred but not reported claims (pure IBNR) and includes calculating pure IBNR exposure with Lognormal and gamma distribution for reporting delay.
+- `r pkg("NetSimR")` provides functions that help model excess levels, capping and pure incurred but not reported claims (pure IBNR) and includes calculating pure IBNR exposure with lognormal and gamma distribution for reporting delay.
 
 #### Ruin theory
 
@@ -124,16 +125,16 @@ More advanced statistical models can be found in the `r view("Econometrics")` an
 
 ### Reinsurance and extreme events
 
-- `r pkg("ReIns", priority = "core")` follows the book "Reinsurance: Actuarial and Statistical Aspects" and provides basic extreme value theory (EVT) estimators and graphical methods, EVT estimators and graphical methods adapted for censored and/or truncated data, Splicing of mixed Erlang distributions with EVT distributions, Value-at-Risk (VaR), Conditional Tail Expectation (CTE) and excess-loss premium estimates.
-- `r pkg("ExtremeRisks")` provides a set of procedures for estimating risks related to extreme events via risk measures such as Expectile, Value-at-Risk, etc.
+- `r pkg("ReIns", priority = "core")` follows the book "Reinsurance: Actuarial and Statistical Aspects" and provides basic extreme value theory (EVT) estimators and graphical methods, EVT estimators and graphical methods adapted for censored and/or truncated data, Splicing of mixed Erlang distributions with EVT distributions, value-at-risk (VaR), conditional tail expectation (CTE) and excess-loss premium estimates.
+- `r pkg("ExtremeRisks")` provides a set of procedures for estimating risks related to extreme events via risk measures such as expectile, value-at-risk, etc.
 
-For a comprehensive review of extreme value analysis, see the `r view("ExtremeValue")`.
+For a comprehensive review of extreme value analysis, see the view `r view("ExtremeValue")`.
 
 
 ### Risk measures
 
-- `r pkg("actuar", priority = "core")` provides functions to compute Value-at-Risk and conditional tail expectation.
-- `r pkg("ActuarialM")` computes Actuarial Measures such as expected shortfall and Value-at-Risk using the Bell G family.
+- `r pkg("actuar", priority = "core")` provides functions to compute value-at-risk and conditional tail expectation.
+- `r pkg("ActuarialM")` computes actuarial measures such as expected shortfall and value-at-risk using the Bell G family.
 
 
 ### Miscellaneous
@@ -172,7 +173,7 @@ Mortality databases are generally provided by demography and/or statistical inst
 - A series of [textbooks in French](https://gitlab.com/vigou3) is proposed by Vincent Goulet, notably on [credibility theory](https://gitlab.com/vigou3/theorie-credibilite-avec-r), [loss modeling](https://vigou3.gitlab.io/modelisation-distributions-sinistres-avec-r/), and [numerical methods](https://gitlab.com/vigou3/methodes-numeriques-en-actuariat-avec-r).
 - `r pkg("FinancialMath")` contains financial math functions and introductory derivative functions included in the Society of Actuaries and Casualty Actuarial Society *Financial Mathematics* exam, and some topics in the *Models for Financial Economics* exam.
 
-See the `r view("TeachingStatistics")` for usual documentation on teaching statistics.
+See the view `r view("TeachingStatistics")` for usual documentation on teaching statistics.
 
 
 ## Bibliography
@@ -187,16 +188,10 @@ See the `r view("TeachingStatistics")` for usual documentation on teaching stati
 ### Life insurance references
 
 - Dickson, D., Hardy, M. & Waters, H. (2013), Actuarial Mathematics for Life Contingent Risks, 2nd edn, Cambridge University Press `r doi("10.1017/9781108784184")`
-- Hardy, M. (2003), Investment Guarantees : Modeling and Risk Management for Equity-Linked Life Insurance, Wiley
 - Macdonald, A., Richard, S. & Currie, I. (2018), Modelling Mortality with Actuarial Applications, Cambridge University Press `r doi("10.1017/9781107051386")`
-- Moller, T. & Steffensen, M. (2007), Market-Valuation Methods in Life and Pension Insurance, Cambridge University Press `r doi("10.1017/CBO9780511543289")`
 
 ### Non-life insurance references
 
-- Bühlmann, H. & Gisler, A. (2005), A Course in Credibility Theory and its Applications, Springer `r doi("10.1007/3-540-29273-X")`
-- Charpentier, A. & Denuit, M. (2004), Mathématiques de l’assurance non vie, Vol. 1 & 2, Economica
 - Frees, E. (2009), Regression Modeling with Actuarial and Financial Applications, International Series on Actuarial Science, Cambridge University Press `r doi("10.1017/CBO9780511814372")`
 - Jong, P. D. & Heller, G. (2008), Generalized Linear Models for Insurance Data, Cambridge University Press `r doi("10.1017/CBO9780511755408")`
 - Klugman, S., Panjer, H. & Willmot, G. (2019), Loss Models : From Data to Decisions, 5th edn, Wiley
-- Taylor, G. (2000), Loss Reserving : An Actuarial Perspective, Kluwer Academic Publishers, Boston `r doi("10.1007/978-1-4615-4583-5")`
-- Wuethrich, M. & Merz, M. (2008), Stochastic Claims Reserving Methods in Insurance, Wiley Finance `r doi("10.1002/9781119206262")`
