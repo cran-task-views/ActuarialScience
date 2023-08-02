@@ -1,6 +1,6 @@
 ---
 name: ActuarialScience
-topic: Actuarial science
+topic: Actuarial Science
 maintainer: Christophe Dutang, Vincent Goulet
 email: dutangc@gmail.com
 version: 2023-07-04
@@ -12,15 +12,16 @@ Actuaries are experts in evaluating the likelihood and financial consequences of
 Base R contains a wide array of functions for probabilistic and statistical models used in actuarial mathematics. Nevertheless, a number of packages have been developed to extend or ease actuarial computations. Due to the intrinsically interdisciplinary nature of actuarial science, this view intersects with `r view("Distributions")`, `r view("Econometrics")`, `r view("ExtremeValue")`, and `r view("Finance")`.
 
 The maintainers gratefully acknowledge the comments and suggestions from Patrice Kiener and Quentin Guibert.
+If you think that some package is missing from the list, please let us know, either via e-mail to the maintainer or by submitting an issue or pull request in the GitHub repository linked above.
 
 ### Table of contents
 
-- [Life Insurance](#life-insurance) 
+- [Life insurance](#life-insurance) 
   - [Life contingencies](#life-contingencies)
   - [Mortality laws and prospective mortality models](#mortality-laws-and-prospective-mortality-models)
   - [Survival analysis and portfolio experience](#survival-analysis-and-portfolio-experience)
   - [Life and pension reserving](#life-reserving)
-- [Non Life Insurance](#non-life-insurance) 
+- [Non-life insurance](#non-life-insurance) 
   - [Loss modeling](#loss-modeling)
   - [Insurance pricing](#a-priori-insurance-pricing)
   - [Experience pricing](#a-posteriori-experience-pricing)
@@ -29,12 +30,12 @@ The maintainers gratefully acknowledge the comments and suggestions from Patrice
   - [Claims generation](#claims-generation)
 - [Reinsurance and extreme events](#reinsurance-and-extreme-events)
 - [Risk measures](#risk-measures)
-- [Misc](#misc)
+- [Miscellaneous](#Miscellaneous)
   - [Data handling](#data-handling)
   - [Mortality databases](#mortality-databases)
   - [Actuarial datasets](#actuarial-datasets)
   - [Documentation, on-line courses](#documentation-on-line-courses)
-- [Related links](#bibliography)
+- [Bibliography](#bibliography)
   - [Actuarial science using R](#actuarial-science-using-r-references)
   - [Life insurance references](#life-insurance-references)
   - [Non-life insurance references](#non-life-insurance-references)
@@ -78,7 +79,7 @@ For a general overview of survival analysis, see the `r view("Survival")`.
 - `r github("primact/SimBEL")` allows to carry out Monte-Carlo simulation of asset-liability cashflows for unit-linked insurance and retirement plans in France.
 
 
-### Non-Life Insurance
+### Non-life insurance
 
 #### Loss modeling
 
