@@ -38,5 +38,5 @@
 - [ ]   The bibliography is still quite long, maybe it would make sense to cut some of the items that are not directly relevant to R.
 - [X]   The view(...) tag only adds the hyperlinked name of the task view but does not add the words "task view". Your formulations seem to assume otherwise, please adapt correspondingly.
 - [X]   At the end of the introductory sentence in Life insurance > Loss modeling about the "Distributions" task view, you might add a sentence like: Here we discuss only those packages that implement distributions particularly designed for actuarial science.
-- [ ]   Please check capitalization also throughout the task view, e.g., incurred or lognormal could probably be lower case? Similarly conditional tail expectation or actuarial measures etc.
+- [X]   Please check capitalization also throughout the task view, e.g., incurred or lognormal could probably be lower case? Similarly conditional tail expectation or actuarial measures etc.
 

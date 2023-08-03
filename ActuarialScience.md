@@ -3,7 +3,7 @@ name: ActuarialScience
 topic: Actuarial Science
 maintainer: Christophe Dutang, Vincent Goulet
 email: dutangc@gmail.com
-version: 2023-07-04
+version: 2023-08-03
 source: https://github.com/cran-task-views/ActuarialScience/
 ---
 
