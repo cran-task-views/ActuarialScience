@@ -35,7 +35,7 @@
     Non Life Insurance → Non-life insurance
     Note that the latter should also be hyphenated consistently.
 - [X]   Some elements of the table of contents are out of sync: Related links should be Bibliography and Misc should be Miscellaneous.
-- [ ]   The bibliography is still quite long, maybe it would make sense to cut some of the items that are not directly relevant to R.
+- [X]   The bibliography is still quite long, maybe it would make sense to cut some of the items that are not directly relevant to R.
 - [X]   The view(...) tag only adds the hyperlinked name of the task view but does not add the words "task view". Your formulations seem to assume otherwise, please adapt correspondingly.
 - [X]   At the end of the introductory sentence in Life insurance > Loss modeling about the "Distributions" task view, you might add a sentence like: Here we discuss only those packages that implement distributions particularly designed for actuarial science.
 - [X]   Please check capitalization also throughout the task view, e.g., incurred or lognormal could probably be lower case? Similarly conditional tail expectation or actuarial measures etc.
