@@ -41,7 +41,7 @@ If you think that some package is missing from the list, please let us know, eit
   - [Non-life insurance references](#non-life-insurance-references)
 
 
-### Life Insurance
+### Life insurance
 
 #### Life contingencies
 
