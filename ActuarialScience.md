@@ -3,7 +3,7 @@ name: ActuarialScience
 topic: Actuarial Science
 maintainer: Christophe Dutang, Vincent Goulet
 email: dutangc@gmail.com
-version: 2023-08-03
+version: 2023-08-17
 source: https://github.com/cran-task-views/ActuarialScience/
 ---
 
@@ -135,6 +135,7 @@ For a comprehensive review of extreme value analysis, see the view `r view("Extr
 
 - `r pkg("actuar", priority = "core")` provides functions to compute value-at-risk and conditional tail expectation.
 - `r pkg("ActuarialM")` computes actuarial measures such as expected shortfall and value-at-risk using the Bell G family.
+- `r pkg("atRisk")` provides actuarial measures such as expected shortfall and value-at-risk using a non-parametric approach or a parametric fit (via Gaussian or skew-t distributions).
 
 
 ### Miscellaneous
