@@ -166,7 +166,7 @@ Mortality databases are generally provided by demography and/or statistical inst
 - An individual claims generator for claims reserving studies is provided by Wang & Wuethrich at `r github("JSchelldorfer/IndividualClaimsSimulator")`.
 - An individual claims history simulation machine for annual cashflows is provided by Gabrielli & Wuethrich at [IndividualClaimsHistory](https://people.math.ethz.ch/~wueth/simulation.html); see also `r github("kasaai/simulationmachine")`.
 - [Cellar](https://cellar.kasa.ai/) is a collection of community-curated open datasets for insurance analytics.
-- `r pkg("DDPM")` provides some insurance-related datasets, some already in `r pkg("CASdatasets")`.
+- `r pkg("DDPM")` provides some insurance-related datasets, some already in `r github("dutangc/CASdatasets")`.
 
 #### Documentation and online courses
 
