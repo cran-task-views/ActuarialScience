@@ -3,7 +3,7 @@ name: ActuarialScience
 topic: Actuarial Science
 maintainer: Christophe Dutang, Vincent Goulet
 email: dutangc@gmail.com
-version: 2023-08-17
+version: 2023-08-30
 source: https://github.com/cran-task-views/ActuarialScience/
 ---
 
@@ -34,7 +34,7 @@ If you think that some package is missing from the list, please let us know, eit
   - [Data handling](#data-handling)
   - [Mortality databases](#mortality-databases)
   - [Actuarial datasets](#actuarial-datasets)
-  - [Documentation, on-line courses](#documentation-on-line-courses)
+  - [Documentation, online courses](#documentation-online-courses)
 - [Bibliography](#bibliography)
   - [Actuarial science using R](#actuarial-science-using-r-references)
   - [Life insurance references](#life-insurance-references)
@@ -161,14 +161,14 @@ Mortality databases are generally provided by demography and/or statistical inst
 
 - `r github("dutangc/CASdatasets")` provides a large variety of actuarial datasets, originally for the book *Computational Actuarial Science with R*. Note that the package is not hosted on CRAN but on github, at [CNRS](http://dutangc.perso.math.cnrs.fr/RRepository/) and [UQAM](http://cas.uqam.ca/).
 - `r pkg("raw")` organizes several sets of publicly available data of interest to non-life actuaries.
-- `r pkg("insuranceData")` provides insurance datasets, which are often used in claims severity and claims frequency modelling. It helps testing new regression models in those problems, such as GLM, GLMM, HGLM, non-linear mixed models.
+- `r pkg("insuranceData")` provides insurance datasets, which are often used in claims severity and claims frequency modelling. It helps testing new regression models in those problems, such as GLM, GLMM, HGLM, nonlinear mixed models.
 - `r pkg("actuar")` provides functions to facilitate the generation of random variates from various probability models commonly used in actuarial applications, such as discrete mixtures and compound models where both the frequency and the severity components can have a hierarchical structure.
 - An individual claims generator for claims reserving studies is provided by Wang & Wuethrich at `r github("JSchelldorfer/IndividualClaimsSimulator")`.
 - An individual claims history simulation machine for annual cashflows is provided by Gabrielli & Wuethrich at [IndividualClaimsHistory](https://people.math.ethz.ch/~wueth/simulation.html); see also `r github("kasaai/simulationmachine")`.
 - [Cellar](https://cellar.kasa.ai/) is a collection of community-curated open datasets for insurance analytics.
 - `r pkg("DDPM")` provides some insurance-related datasets, some already in `r pkg("CASdatasets")`.
 
-#### Documentation and on-line courses
+#### Documentation and online courses
 
 - A collection of computer labs in R is provided by [Antonio & Crevecoeur](https://katrienantonio.github.io/Risk-modelling-in-insurance/).
 - A series of [textbooks in French](https://gitlab.com/vigou3) is proposed by Vincent Goulet, notably on [credibility theory](https://gitlab.com/vigou3/theorie-credibilite-avec-r), [loss modeling](https://vigou3.gitlab.io/modelisation-distributions-sinistres-avec-r/), and [numerical methods](https://gitlab.com/vigou3/methodes-numeriques-en-actuariat-avec-r).
@@ -181,18 +181,18 @@ See the view `r view("TeachingStatistics")` for usual documentation on teaching 
 
 ### Actuarial science using R references
 
-- Charpentier, A., ed. (2014), Computational Actuarial Science with R, Chapman and Hall-CRC `r doi("10.1201/b17230")`
-- Actuarial science using R: Kaas, R., Goovaerts, M., Dhaene, J. & Denuit, M. (2008), Modern Actuarial Risk Theory Using R, 2nd edn, Springer `r doi("10.1007/978-3-540-70998-5")`
-- Bowers, N. L., Gerber, H. U., Hickman, J. C., Jones, D. A. & Nesbitt, C. J. (1997), Actuarial Mathematics, The Society of Actuaries
-- Teugels, J. & Sundt, B. (2004), Encyclopedia of Actuarial Science, Vol. 1, John Wiley & Sons `r doi("10.1002/9780470012505")`
+- Charpentier, A., ed. (2014). Computational Actuarial Science with R, Chapman & Hall/CRC. `r doi("10.1201/b17230")`
+- Kaas, R., Goovaerts, M., Dhaene, J. & Denuit, M. (2008). Modern Actuarial Risk Theory Using R, 2nd ed., Springer-Verlag. `r doi("10.1007/978-3-540-70998-5")`
+- Bowers, N. L., Gerber, H. U., Hickman, J. C., Jones, D. A. & Nesbitt, C. J. (1997). Actuarial Mathematics, The Society of Actuaries.
+- Teugels, J. & Sundt, B. (2004). Encyclopedia of Actuarial Science, Vol. 1, John Wiley & Sons. `r doi("10.1002/9780470012505")`
 
 ### Life insurance references
 
-- Dickson, D., Hardy, M. & Waters, H. (2013), Actuarial Mathematics for Life Contingent Risks, 2nd edn, Cambridge University Press `r doi("10.1017/9781108784184")`
-- Macdonald, A., Richard, S. & Currie, I. (2018), Modelling Mortality with Actuarial Applications, Cambridge University Press `r doi("10.1017/9781107051386")`
+- Dickson, D., Hardy, M. & Waters, H. (2013). Actuarial Mathematics for Life Contingent Risks, 2nd ed., Cambridge University Press. `r doi("10.1017/9781108784184")`
+- Macdonald, A., Richard, S. & Currie, I. (2018). Modelling Mortality with Actuarial Applications, Cambridge University Press. `r doi("10.1017/9781107051386")`
 
 ### Non-life insurance references
 
-- Frees, E. (2009), Regression Modeling with Actuarial and Financial Applications, International Series on Actuarial Science, Cambridge University Press `r doi("10.1017/CBO9780511814372")`
-- Jong, P. D. & Heller, G. (2008), Generalized Linear Models for Insurance Data, Cambridge University Press `r doi("10.1017/CBO9780511755408")`
-- Klugman, S., Panjer, H. & Willmot, G. (2019), Loss Models : From Data to Decisions, 5th edn, Wiley
+- Frees, E. (2009). Regression Modeling with Actuarial and Financial Applications, International Series on Actuarial Science, Cambridge University Press. `r doi("10.1017/CBO9780511814372")`
+- Jong, P. D. & Heller, G. (2008). Generalized Linear Models for Insurance Data, Cambridge University Press. `r doi("10.1017/CBO9780511755408")`
+- Klugman, S., Panjer, H. & Willmot, G. (2019). Loss Models: From Data to Decisions, 5th ed., John Wiley & Sons.

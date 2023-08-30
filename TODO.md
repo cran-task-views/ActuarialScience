@@ -1,4 +1,4 @@
-#  Todolist -- June 1
+# June 1
 
 ## Dirk Eddelbuettel
 
@@ -7,7 +7,6 @@
 - [X] nixing (removing) anchors 
 - [X] add some words on mortality data for people who are not aware of the good job done by HMD and other national statistics offices. 
 - [x] don't wrap lines
-
 
 ## Achim Zeileis
 
@@ -21,22 +20,21 @@
 
 ## Other topics
 
-- [] keep an eye on the archived package `MortalityLaws`.
+- [X] Keep an eye on the archived package `MortalityLaws` → unarchived on 2023-08-08.
 
-#  Todolist -- July 18
 
+# July 18
 
 ## Achim Zeileis
 
-- [X]   The topic field in the header should be in title case: Actuarial Science.
-- [X]   In the paragraph starting with "The maintainers gratefully acknowledge..." it would be good to also add some encouragement to contribute to the task view with pointers on how this can be done. See some of the other recent task views for examples on how this can be done.
-- [X]       For the table of contents it's probably easiest to consistently use sentence case. Thus, you need to switch
+- [X] The topic field in the header should be in title case: Actuarial Science.
+- [X] In the paragraph starting with "The maintainers gratefully acknowledge..." it would be good to also add some encouragement to contribute to the task view with pointers on how this can be done. See some of the other recent task views for examples on how this can be done.
+- [X] For the table of contents it's probably easiest to consistently use sentence case. Thus, you need to switch
     Life Insurance → Life insurance
     Non Life Insurance → Non-life insurance
     Note that the latter should also be hyphenated consistently.
-- [X]   Some elements of the table of contents are out of sync: Related links should be Bibliography and Misc should be Miscellaneous.
-- [X]   The bibliography is still quite long, maybe it would make sense to cut some of the items that are not directly relevant to R.
-- [X]   The view(...) tag only adds the hyperlinked name of the task view but does not add the words "task view". Your formulations seem to assume otherwise, please adapt correspondingly.
-- [X]   At the end of the introductory sentence in Life insurance > Loss modeling about the "Distributions" task view, you might add a sentence like: Here we discuss only those packages that implement distributions particularly designed for actuarial science.
-- [X]   Please check capitalization also throughout the task view, e.g., incurred or lognormal could probably be lower case? Similarly conditional tail expectation or actuarial measures etc.
-
+- [X] Some elements of the table of contents are out of sync: Related links should be Bibliography and Misc should be Miscellaneous.
+- [X] The bibliography is still quite long, maybe it would make sense to cut some of the items that are not directly relevant to R.
+- [X] The view(...) tag only adds the hyperlinked name of the task view but does not add the words "task view". Your formulations seem to assume otherwise, please adapt correspondingly.
+- [X] At the end of the introductory sentence in Life insurance > Loss modeling about the "Distributions" task view, you might add a sentence like: Here we discuss only those packages that implement distributions particularly designed for actuarial science.
+- [X] Please check capitalization also throughout the task view, e.g., incurred or lognormal could probably be lower case? Similarly conditional tail expectation or actuarial measures etc.
