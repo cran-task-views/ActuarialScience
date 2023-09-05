@@ -91,6 +91,7 @@ Here we focus only on packages that implement distributions particularly designe
 - `r pkg("mbbefd", priority = "core")` provides distributions that are typically used for exposure rating in general insurance, in particular to price reinsurance contracts.
 - `r pkg("OpVaR")` provides functions for computing the value-at-risk in compound Poisson models. The implementation comprises functions for modeling loss frequencies and loss severities with plain, mixed or spliced distributions using maximum likelihood estimation and Bayesian approaches.
 - `r pkg("NetSimR")` provides capped mean, exposure curves and increased limit factor curves (ILFs) for lognormal, gamma, Pareto, sliced lognormal-Pareto and sliced gamma-Pareto distributions. 
+- `r pkg("Delaporte")` provides probability mass, distribution, quantile, random-variate generation, and method-of-moments parameter-estimation functions for the Delaporte discrete distribution.
 
 #### A priori insurance pricing
 
