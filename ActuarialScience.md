@@ -3,7 +3,7 @@ name: ActuarialScience
 topic: Actuarial Science
 maintainer: Christophe Dutang, Vincent Goulet
 email: dutangc@gmail.com
-version: 2023-08-30
+version: 2023-10-01
 source: https://github.com/cran-task-views/ActuarialScience/
 ---
 
@@ -63,6 +63,7 @@ If you think that some package is missing from the list, please let us know, eit
 - `r pkg("MortalityGaps")` provides methods for forecasting male/female life expectancy based on analysis of the gap between male/female life expectancy in a country compared with the record level of female life expectancy in the world.
 - `r pkg("GPRMortality")` estimate Bayesian statistical models for estimating child and adult mortality rates which its data likelihood is mortality rates from different data sources such as: death registration system, Censuses or surveys.
 - `r pkg("IBMPopSim")` allows the efficient simulation of a wide class of individual based models where individuals are marked by their date of birth and a set of (discrete or continuous) characteristics.
+- `r pkg("WH")` provides an enhanced implementation of Whittaker-Henderson smoothing for the gradation of one-dimensional and two-dimensional life insurance tables, based on Biessy (2023) `r doi("10.48550/arXiv.2306.06932")`. Among other features, it generalizes the original smoothing algorithm to maximum likelihood estimation, automatically selects the smoothing parameter(s) and extrapolates beyond the range of data.
 
 See also the view `r view("Epidemiology")` for epidemiology topics and the view `r view("Bayesian")` for Bayesian inference.
 
