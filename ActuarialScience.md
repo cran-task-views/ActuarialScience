@@ -3,7 +3,7 @@ name: ActuarialScience
 topic: Actuarial Science
 maintainer: Christophe Dutang, Vincent Goulet
 email: dutangc@gmail.com
-version: 2023-10-01
+version: 2024-02-23
 source: https://github.com/cran-task-views/ActuarialScience/
 ---
 
@@ -155,9 +155,9 @@ Mortality databases are generally provided by demography and/or statistical inst
 
 - Australian database is available at [AHMD](https://aushd.org/)
 - Canadian database is available at [CHMD](http://www.bdlc.umontreal.ca/CHMD/)
-- French regional database is available at [FRD](https://frdata.org/)
+- French regional database is available at [FRD](https://frdata.org/). Mortality tables at regional are available at [FRD](https://frdata.org/fr/). The mortality by cause is provided by [INED](https://www.ined.fr/en/everything_about_population/data/france/deaths-causes-mortality/mortality-tables/)
 - Japan database is available at [JMD](https://www.ipss.go.jp/p-toukei/JMD/index-en.asp)
-- United States database is available at [USMD](https://usa.mortality.org/)
+- United States database is available at [USMD](https://usa.mortality.org/) from HMD. the death by cause is provided by [CDC](https://www.cdc.gov/) through [Wonder interface](https://wonder.cdc.gov/) at county level, which can used in conjunction with [Census Bureau](https://data.census.gov/) datasets.
 
 #### Actuarial datasets
 
@@ -191,10 +191,11 @@ See the view `r view("TeachingStatistics")` for usual documentation on teaching 
 ### Life insurance references
 
 - Dickson, D., Hardy, M. & Waters, H. (2013). Actuarial Mathematics for Life Contingent Risks, 2nd ed., Cambridge University Press. `r doi("10.1017/9781108784184")`
-- Macdonald, A., Richard, S. & Currie, I. (2018). Modelling Mortality with Actuarial Applications, Cambridge University Press. `r doi("10.1017/9781107051386")`
+- Macdonald, A., Richard, S. & Currie, I. (2018). Modelling Mortality with Actuarial Applications, Cambridge University Press. `r doi("10.1017/9781107051386")` 
 
 ### Non-life insurance references
 
 - Frees, E. (2009). Regression Modeling with Actuarial and Financial Applications, International Series on Actuarial Science, Cambridge University Press. `r doi("10.1017/CBO9780511814372")`
 - Jong, P. D. & Heller, G. (2008). Generalized Linear Models for Insurance Data, Cambridge University Press. `r doi("10.1017/CBO9780511755408")`
 - Klugman, S., Panjer, H. & Willmot, G. (2019). Loss Models: From Data to Decisions, 5th ed., John Wiley & Sons.
+- Charpentier, A. & Denuit, M. (2023). Non-life insurance mathematics [nonlife maths with R examples](https://nonlifemaths.github.io/)
