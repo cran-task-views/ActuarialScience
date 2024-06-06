@@ -3,7 +3,7 @@ name: ActuarialScience
 topic: Actuarial Science
 maintainer: Christophe Dutang, Vincent Goulet
 email: dutangc@gmail.com
-version: 2024-02-23
+version: 2024-06-06
 source: https://github.com/cran-task-views/ActuarialScience/
 ---
 
@@ -90,6 +90,7 @@ Here we focus only on packages that implement distributions particularly designe
 - Pioneer package `r pkg("actuar", priority = "core")` provides functions and data sets for actuarial science: modeling of loss distributions; simulation of compound models, discrete mixtures and compound hierarchical models. It support for many additional probability distributions to model insurance loss size and frequency: 23 continuous heavy tailed distributions (e.g. the Feller-Pareto family of distributions); the Poisson-inverse Gaussian discrete distribution; zero-truncated and zero-modified extensions of the standard discrete distributions as well as phase-type distributions.
 - `r pkg("fitdistrplus")` provides a user-friendly function to fit discrete/continuous probability distributions based on maximum likelihood estimation, quantile matching estimation, moment matching estimation, etc. Starting values for numerical algorithms for loss distributions of `r pkg("actuar", priority = "core")` are provided.
 - `r pkg("mbbefd", priority = "core")` provides distributions that are typically used for exposure rating in general insurance, in particular to price reinsurance contracts.
+- `r pkg("MBBEFDLite", priority = "core")` provides probability mass, distribution, quantile, random variate generation, and method-of-moments parameter fitting for the MBBEFD family of distributions used in insurance modeling as described in Bernegger (1997) without any external dependencies.
 - `r pkg("NetSimR")` provides capped mean, exposure curves and increased limit factor curves (ILFs) for lognormal, gamma, Pareto, sliced lognormal-Pareto and sliced gamma-Pareto distributions. 
 - `r pkg("Delaporte")` provides probability mass, distribution, quantile, random-variate generation, and method-of-moments parameter-estimation functions for the Delaporte discrete distribution.
 
