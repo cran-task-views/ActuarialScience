@@ -3,7 +3,7 @@ name: ActuarialScience
 topic: Actuarial Science
 maintainer: Christophe Dutang, Vincent Goulet
 email: dutangc@gmail.com
-version: 2024-10-03
+version: 2025-02-08
 source: https://github.com/cran-task-views/ActuarialScience/
 ---
 
@@ -49,6 +49,7 @@ If you think that some package is missing from the list, please let us know, eit
 - `r pkg("AnnuityRIR")` proposes different techniques for the approximation of the present and final value of a unitary annuity-due or annuity-immediate considering interest rate as a random variable.
 - `r pkg("LifeInsuranceContracts")` provides R6 classes to model traditional life insurance contracts like annuities, whole life insurances or endowments with (discretionary) profit participation. This package provides a framework to model such contracts in a very generic (cash-flow-based) way and includes modelling profit participation schemes, dynamic increases or more general contract layers, as well as contract changes.
 - `r pkg("MortCast")` provides a function `life.table` to compute survival/death probabilities.
+- `r pkg("lifepack")` calculates insurance reserves, premiums using advanced numerical methods in order to facilitate accurate financial projections.
 
 #### Mortality laws and prospective mortality models
 
