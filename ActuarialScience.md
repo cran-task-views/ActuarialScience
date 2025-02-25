@@ -3,7 +3,7 @@ name: ActuarialScience
 topic: Actuarial Science
 maintainer: Christophe Dutang, Vincent Goulet
 email: dutangc@gmail.com
-version: 2025-02-08
+version: 2025-02-25
 source: https://github.com/cran-task-views/ActuarialScience/
 ---
 
@@ -80,6 +80,10 @@ For a general overview of survival analysis, see the view `r view("Survival")`.
 - `r pkg("lifecontingencies", priority = "core")` for many life and pension computations.
 - `r github("primact/SimBEL")` allows to carry out Monte-Carlo simulation of asset-liability cashflows for unit-linked insurance and retirement plans in France.
 - `r github("ungolof/AffineMortality")` performs parameter estimation, goodness-of-fit analysis, simulation, and projection of future mortality rates for a set of affine mortality models for use in pricing and reserving, see Ungolo et al. (2024) `r doi("10.1017/S1748499524000149")`. 
+
+#### Economic scenario generators
+
+- `r pkg("GSE")` allows to generate economic scenarii for various outputs: forward rates, zero-coupon rate, stock rates, real-estate rate, liquity spread, default spread,... It provides also testing functions.
 
 ### Non-life insurance
 
