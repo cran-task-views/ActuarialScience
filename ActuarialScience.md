@@ -3,7 +3,7 @@ name: ActuarialScience
 topic: Actuarial Science
 maintainer: Christophe Dutang, Vincent Goulet
 email: dutangc@gmail.com
-version: 2025-02-25
+version: 2025-04-09
 source: https://github.com/cran-task-views/ActuarialScience/
 ---
 
@@ -84,6 +84,7 @@ For a general overview of survival analysis, see the view `r view("Survival")`.
 #### Economic scenario generators
 
 - `r pkg("GSE")` allows to generate economic scenarii for various outputs: forward rates, zero-coupon rate, stock rates, real-estate rate, liquity spread, default spread,... It provides also testing functions.
+- see also [EUROFIDAI](https://www.eurofidai.org/product/esg-raw-data-corporations)
 
 ### Non-life insurance
 
@@ -174,6 +175,7 @@ Mortality databases are generally provided by demography and/or statistical inst
 - An individual claims history simulation machine for annual cashflows is provided by Gabrielli & Wuethrich at [IndividualClaimsHistory](https://people.math.ethz.ch/~wueth/simulation.html); see also `r github("kasaai/simulationmachine")`.
 - [Cellar](https://cellar.kasa.ai/) is a collection of community-curated open datasets for insurance analytics.
 - `r pkg("DDPM")` provides some insurance-related datasets, some already in `r github("dutangc/CASdatasets")`.
+- `r pkg("rIACI")` provides the Iberian Actuarial Climate Index and its components (temperature, precipitation, wind power, ...) to support climate change analysis and risk assessment.
 
 #### Documentation and online courses
 
