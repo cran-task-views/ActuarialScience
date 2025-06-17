@@ -3,7 +3,7 @@ name: ActuarialScience
 topic: Actuarial Science
 maintainer: Christophe Dutang, Vincent Goulet
 email: dutangc@gmail.com
-version: 2025-04-09
+version: 2025-06-17
 source: https://github.com/cran-task-views/ActuarialScience/
 ---
 
@@ -21,6 +21,7 @@ If you think that some package is missing from the list, please let us know, eit
   - [Mortality laws and prospective mortality models](#mortality-laws-and-prospective-mortality-models)
   - [Survival analysis and portfolio experience](#survival-analysis-and-portfolio-experience)
   - [Life and pension reserving](#life-reserving)
+  - [Economic scenario generators](#economic-scenario-generators)
 - [Non-life insurance](#non-life-insurance) 
   - [Loss modeling](#loss-modeling)
   - [Insurance pricing](#a-priori-insurance-pricing)
@@ -80,6 +81,7 @@ For a general overview of survival analysis, see the view `r view("Survival")`.
 - `r pkg("lifecontingencies", priority = "core")` for many life and pension computations.
 - `r github("primact/SimBEL")` allows to carry out Monte-Carlo simulation of asset-liability cashflows for unit-linked insurance and retirement plans in France.
 - `r github("ungolof/AffineMortality")` performs parameter estimation, goodness-of-fit analysis, simulation, and projection of future mortality rates for a set of affine mortality models for use in pricing and reserving, see Ungolo et al. (2024) `r doi("10.1017/S1748499524000149")`. 
+- `r pkg("volrisk")` simulates and evaluates stochastic scenarios of death and lapse events in life reinsurance contracts with profit commissions.
 
 #### Economic scenario generators
 
