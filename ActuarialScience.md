@@ -125,7 +125,6 @@ More advanced statistical models can be found in the views `r view("Econometrics
 #### Ruin theory
 
 - `r pkg("actuar", priority = "core")` provides infinite time ruin probability of Cramér-Lundberg and Sparre Andersen models, using phase-type distributions including mixtures of exponentials, Erlang and mixture of Erlang for both claim amount distribution and claim interarrival times.
-- `r pkg("ruin")` implements a collection of common models of risk processes in actuarial science, represented as formal S4 classes. Each class (risk model) has a simulator of its path, and a plotting function. Further, a Monte-Carlo estimator of a ruin probability for a finite time is implemented, using a parallel computation. Currently, the package extends two classical risk models Cramer-Lundberg and Sparre Andersen models by including capital injections, that are positive jumps.
 
 #### Claims generation
 
