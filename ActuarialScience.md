@@ -24,6 +24,7 @@ If you think that some package is missing from the list, please let us know, eit
   - [Economic scenario generators](#economic-scenario-generators)
 - [Non-life insurance](#non-life-insurance) 
   - [Loss modeling](#loss-modeling)
+  - [Aggregate claim amount distribution](#computation-of-the-aggregate-claim-amount-distribution)
   - [Insurance pricing](#a-priori-insurance-pricing)
   - [Experience pricing](#a-posteriori-experience-pricing)
   - [Claims reserving](#claims-reserving)
@@ -95,12 +96,18 @@ For a general overview of survival analysis, see the view `r view("Survival")`.
 The view `r view("Distributions")` provides a detailed list of probability distributions available in base R and CRAN packages.
 Here we focus only on packages that implement distributions particularly designed for actuarial science.
 
-- Pioneer package `r pkg("actuar", priority = "core")` provides functions and data sets for actuarial science: modeling of loss distributions; simulation of compound models, discrete mixtures and compound hierarchical models. It support for many additional probability distributions to model insurance loss size and frequency: 23 continuous heavy tailed distributions (e.g. the Feller-Pareto family of distributions); the Poisson-inverse Gaussian discrete distribution; zero-truncated and zero-modified extensions of the standard discrete distributions as well as phase-type distributions.
+- Pioneer package `r pkg("actuar", priority = "core")` provides support for many additional probability distributions to model insurance loss size and frequency: 23 continuous heavy tailed distributions (e.g. the Feller-Pareto family of distributions); the Poisson-inverse Gaussian discrete distribution; zero-truncated and zero-modified extensions of the standard discrete distributions as well as phase-type distributions. See the `"distributions"` package vignette. `r pkg("actuar")` also provides extensive support for grouped data, fitting of distributions using minimum distance, and treatment of coverage modifications. See the `"modeling"` package vignette.
 - `r pkg("fitdistrplus")` provides a user-friendly function to fit discrete/continuous probability distributions based on maximum likelihood estimation, quantile matching estimation, moment matching estimation, etc. Starting values for numerical algorithms for loss distributions of `r pkg("actuar", priority = "core")` are provided.
 - `r pkg("mbbefd", priority = "core")` provides distributions that are typically used for exposure rating in general insurance, in particular to price reinsurance contracts.
 - `r pkg("MBBEFDLite", priority = "core")` provides probability mass, distribution, quantile, random variate generation, and method-of-moments parameter fitting for the MBBEFD family of distributions used in insurance modeling as described in Bernegger (1997) without any external dependencies.
 - `r pkg("NetSimR")` provides capped mean, exposure curves and increased limit factor curves (ILFs) for lognormal, gamma, Pareto, sliced lognormal-Pareto and sliced gamma-Pareto distributions. 
 - `r pkg("Delaporte")` provides probability mass, distribution, quantile, random-variate generation, and method-of-moments parameter-estimation functions for the Delaporte discrete distribution.
+
+#### Computation of the aggregate claim amount distribution
+
+A central problem of risk theory is the modeling the distribution of total claims over a fixed period of time using the classical collective model of risk theory.
+
+- `r pkg("actuar", priority = "core")` has extensive support for the computation of the aggregate claim amount distribution of a portfolio of insurance risks, in particular using the well known Panjer recursion formula. See the `"risk"` package vignette.
 
 #### A priori insurance pricing
 
@@ -113,7 +120,7 @@ More advanced statistical models can be found in the views `r view("Econometrics
 
 #### A posteriori experience pricing
 
-- `r pkg("actuar", priority = "core")` provides functions for credibility theory: `cm` is the unified front end for credibility models fitting and supports hierarchical models with any number of levels (with Bühlmann and Bühlmann-Straub models as special cases) and the regression model of Hachemeister. `cm` can also fit linear Bayes models, in which case usage is much simplified.
+- `r pkg("actuar", priority = "core")` provides functions for credibility theory: `cm` is the unified front end for credibility models fitting and supports hierarchical models with any number of levels (with Bühlmann and Bühlmann-Straub models as special cases) and the regression model of Hachemeister. `cm` can also fit linear Bayes models, in which case usage is much simplified. See the `"credibility"` package vignette.
 - `r pkg("actuaRE")` allows to fit a random effects model using either the hierarchical credibility model, a combination of the hierarchical credibility model with a generalized linear model or a Tweedie generalized linear mixed model.
 
 #### Claims reserving
@@ -124,7 +131,7 @@ More advanced statistical models can be found in the views `r view("Econometrics
 
 #### Ruin theory
 
-- `r pkg("actuar", priority = "core")` provides infinite time ruin probability of Cramér-Lundberg and Sparre Andersen models, using phase-type distributions including mixtures of exponentials, Erlang and mixture of Erlang for both claim amount distribution and claim interarrival times.
+- `r pkg("actuar", priority = "core")` provides infinite time ruin probabilities in the Cramér-Lundberg and Sparre Andersen models. These are computed using phase-type distributions that include mixtures of exponentials, Erlang and mixture of Erlang for both claim amount distribution and claim interarrival times. The package also provides a function to compute the adjustment coefficient. See the section on ruin theory in the `"risk"` package vignette.
 
 #### Claims generation
 
@@ -171,7 +178,7 @@ Mortality databases are generally provided by demography and/or statistical inst
 - `r github("dutangc/CASdatasets")` provides a large variety of actuarial datasets, originally for the book *Computational Actuarial Science with R*. Note that the package is not hosted on CRAN but on github, at [CNRS](http://dutangc.perso.math.cnrs.fr/RRepository/) and [UQAM](http://cas.uqam.ca/).
 - `r pkg("raw")` organizes several sets of publicly available data of interest to non-life actuaries.
 - `r pkg("insuranceData")` provides insurance datasets, which are often used in claims severity and claims frequency modelling. It helps testing new regression models in those problems, such as GLM, GLMM, HGLM, nonlinear mixed models.
-- `r pkg("actuar")` provides functions to facilitate the generation of random variates from various probability models commonly used in actuarial applications, such as discrete mixtures and compound models where both the frequency and the severity components can have a hierarchical structure.
+- `r pkg("actuar")` provides functions to facilitate the generation of random variates from various probability models commonly used in actuarial applications, such as discrete mixtures and compound models where both the frequency and the severity components can have a hierarchical structure. See the `"simulation"` package vignette.
 - An individual claims generator for claims reserving studies is provided by Wang & Wuethrich at `r github("JSchelldorfer/IndividualClaimsSimulator")`.
 - An individual claims history simulation machine for annual cashflows is provided by Gabrielli & Wuethrich at [IndividualClaimsHistory](https://people.math.ethz.ch/~wueth/simulation.html); see also `r github("kasaai/simulationmachine")`.
 - [Cellar](https://cellar.kasa.ai/) is a collection of community-curated open datasets for insurance analytics.
