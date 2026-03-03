@@ -3,7 +3,7 @@ name: ActuarialScience
 topic: Actuarial Science
 maintainer: Christophe Dutang, Vincent Goulet
 email: dutangc@gmail.com
-version: 2025-10-08
+version: 2026-03-03
 source: https://github.com/cran-task-views/ActuarialScience/
 ---
 
@@ -153,7 +153,7 @@ For a comprehensive review of extreme value analysis, see the view `r view("Extr
 - `r pkg("actuar", priority = "core")` provides functions to compute value-at-risk and conditional tail expectation.
 - `r pkg("ActuarialM")` computes actuarial measures such as expected shortfall and value-at-risk using the Bell G family.
 - `r pkg("atRisk")` provides actuarial measures such as expected shortfall and value-at-risk using a non-parametric approach or a parametric fit (via Gaussian or skew-t distributions).
-
+- `r github("AntoineUC/Expectrem")` provides the expected shortfall for many distributions including Fréchet, Gumbel, log-normal, normal, Pareto, Weibull as well the expectile risk measure for those distributions. Expectile estimators with confidence interval are also provided through extreme value analysis.
 
 ### Miscellaneous
 
