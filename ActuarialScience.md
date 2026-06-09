@@ -3,7 +3,7 @@ name: ActuarialScience
 topic: Actuarial Science
 maintainer: Christophe Dutang, Vincent Goulet
 email: dutangc@gmail.com
-version: 2026-05-21
+version: 2026-06-09
 source: https://github.com/cran-task-views/ActuarialScience/
 ---
 
@@ -58,6 +58,7 @@ If you think that some package is missing from the list, please let us know, eit
 - `r pkg("HMDHFDplus")` allows to read Human Mortality Database and Human Fertility Database Data from the Web in conjunction with `r pkg("demography")`.
 - `r pkg("StMoMo")` implements of the family of generalised age-period-cohort stochastic mortality models. This family of models encompasses many models proposed in the actuarial and demographic literature including the Lee-Carter (1992) `r doi("10.2307/2290201")` and Cairns-Blake-Dowd (2006) `r doi("10.1111/j.1539-6975.2006.00195.x")` models. It includes functions for fitting mortality models, analysing their goodness-of-fit and performing mortality projections and simulations.
 - `r pkg("apc")` provides functions for age-period-cohort analysis. It can deal with: aggregate data indexed by age-cohort, age-period or cohort-period, for which a GLM allow a fit for 3, 2, 1 or 0 of the age-period-cohort factors; individual-level data for each of age, period, and cohort for which a GLM allow to fit repeated cross-section model.
+- `r pkg("LEdecomp")` provides a set of all-cause and cause-specific life expectancy sensitivity and decomposition methods, including Arriaga (1984) `r doi(10.2307/2061029)`, others documented by Ponnapalli (2005) `r doi(10.4054/DemRes.2005.12.7)`, lifetable, numerical, and other analytic or algorithmic approaches such as Horiuchi et al (2008) `r doi(10.1353/dem.0.0033)`, or Andreev et al (2002) `r doi(10.4054/DemRes.2002.7.14)`.
 - `r pkg("MortalityTables")` provides classes to implement and plot cohort life tables for actuarial calculations. In particular, birth-year dependent mortality tables using a yearly trend to extrapolate from a base year are implemented, as well as period life table, cohort life tables using an age shift, and merged life tables.
 - `r pkg("StanMoMo")` implements of popular mortality models using the 'rstan' package, which provides the R interface to the Stan C++ library for Bayesian estimation.
 - `r pkg("MortCast")` provides estimation and projection methods for Kannisto and Lee-Carter mortality models, as well as methods blending.
