@@ -3,7 +3,7 @@ name: ActuarialScience
 topic: Actuarial Science
 maintainer: Christophe Dutang, Vincent Goulet
 email: dutangc@gmail.com
-version: 2026-06-09
+version: 2026-09-29
 source: https://github.com/cran-task-views/ActuarialScience/
 ---
 
@@ -186,6 +186,7 @@ Mortality databases are generally provided by demography and/or statistical inst
 - [Cellar](https://cellar.kasa.ai/) is a collection of community-curated open datasets for insurance analytics.
 - `r pkg("DDPM")` provides some insurance-related datasets, some already in `r github("dutangc/CASdatasets")`.
 - `r pkg("rIACI")` provides the Iberian Actuarial Climate Index and its components (temperature, precipitation, wind power, ...) to support climate change analysis and risk assessment.
+- `r pkg("xaci")` computes the Actuarial Climate Index (ACI) and its components (temperature, precipitation, drought, wind, sea level) from gridded climate data and tide gauge records. 
 
 #### Documentation and online courses
 
